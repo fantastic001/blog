@@ -21,6 +21,7 @@ $brand-color:      #2a7ae2;
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
+$footer-color: $grey-color-light;
 
 // Width of the content area
 $content-width:    800px;
@@ -28,7 +29,8 @@ $content-width:    800px;
 $on-palm:          600px;
 $on-laptop:        800px;
 
-
+$header-image: url(header.jpg);
+$title-color: #eee;
 
 // Use media queries like this:
 // @include media-query($on-palm) {
