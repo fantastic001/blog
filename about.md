@@ -4,12 +4,17 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+I am software developer interested in open source technology. I am interested in the following technologies:
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jglovier" %} /
-[jekyll-new](https://github.com/jglovier/jekyll-new)
+  * Linux 
+  * Python 
+  * Django 
+  * AngularJS
+  * OpenGL 
 
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+You can contact me via 
+
+  * Email: [{{ site.email }}]({{ site.email }})
+  * GitHub: [{{ site.github_username }}](https://github.com/{{site.github_username}})
+  * Twitter: [{{ site.twitter_username }}](https://twitter.com/{{ site.twitter_username }})
+  * LinkedIn: [Stefan Nožinić]({{ site.linkedin_url }})
