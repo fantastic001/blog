@@ -9,7 +9,7 @@ Hello! I am Stefan and this will be place where I will express my ideas, experie
 few years ago and that blog is still alive. That blog has been written in Serbian which is my native language and has been hosted 
 on Wordpress. Since then, I have been a little busy so I couldn't write anything useful on blog. I have been writing for LiBRE! magazine since 2013. and I cannot express enough how much I'm proud of these articles written there. The problem with magazine is 
 that you cannot express your subjective opinion and you have to focus on objective articles. This is the reason why I started maintaining
-this blog, on English, hosted on github as github page, as static site. You may ask why this choice of technology. Simple answer is
+this blog, in English, hosted on github as github page, as static site. You may ask why this choice of technology. Simple answer is
 that I want minimalism in maintaining platform and I can use git well enough to make it work for this purpose. Another reason is 
 because I'm building stuff. My friends like Git, I like Git and everyone should like Git because Git is great. Use it everywhere. 
 GitHub is fantastic place to host your projects even if it is your own blog.
