@@ -19,7 +19,7 @@ da se bave naukom ili da se upuste u izradu nekog projekta van ISP, kod kuće,  
 Kao stariji polaznik sam često dobijao pitanja od mlađih o tome kako se radi projekat, šta da predlože itd. Zbog svega ovoga sam odlučio da napišem ovo ovde pa ako nekome bar delić bude koristan, odlično! Treba naglasiti da je tekst u većem delu moje lično iskustvo i moji lični stavovi pa ako se neko ne slaže, neka napiše u komentar ili pošalje mejl, vredi naučiti i čuti nešto novo. 
 
 Odabir projekta
-=================
+-------------------
 
 Odabir projekta je prva aza i ona se obavlja prilikom prijave na seminar. Predlog projekta se šalje u sklopu dokumentacije prilikom
 konkurisanja na seminar kao stariji polaznik. Ovde je bitno napomenuti da taj predlog projekta koji se šalje u prijavi za seminar ne mora biti konačan. Predlog se dodatno izrađuje tokom zimskog seminara uz konsultacije sa rukovodiocem i saradnicima na seminaru. 
@@ -28,7 +28,7 @@ Ipak, važno je taj predlog tokom prijavljivanja na seminar napisati što bolje,
 Ovde je pre svega važno biti svestan koji je cilj projekta i čime se Petnica bavi. Zbog ovoga, treba prvo da razmotrimo kog karaktera bi trebalo da bude projekat koji ćete izrađivati tokom godine. 
 
 Naučni metod
-------------
+=============
 
 Dakle, kao što joj i samo ime kaže, Petnica je naučno-istraživačka stanica. Ovo znači da se bavi edukacijom polaznika tako što ih uči 
 da zaključke donose na osnovu naučno prihvatljivih činjenica i na osnovu logike. Zbog ovoga se posebna pažnja posvećuje obrazovanju
@@ -45,7 +45,7 @@ Za svaku fazu je namenjen poseban seminar: zimski, letnji i jesenji.
 Odabir projekta se zapravo svodi na prvu fazu - postavljanje hipoteze. 
 
 Naučni metod u računarstvu
-----------------------------
+===========================
 
 Ako ovo sve deluje previše opširno, evo malo konkretnih primera. Računarstvo je nauka, isto kao i astronomija, fizika, psihologija, istorija... Dakle, metode se primenjuje i na ovu oblast kao i na svaku drugu. 
 
@@ -75,7 +75,7 @@ Dake, moramo imati nešto sa čim poredimo i moramo imati način kako da izmerim
 Merenje može biti bilo šta, na primer, preciznost prepoznavanja obrazaca u mašinskom učenju, odstupanje od tačne vrednosti kod numeričkih simulacija, brzina algoritma, broj linija koda kod novog jezika itd... 
 
 Ali ....kako do ideje za kul projekat?
------------------------------------------
+=======================================
 
 OK, sad znamo šta nam treba sve da imamo dobar predlog projekta ali još uvek ne znamo kako da dođemo na ideju. Do dobre ideje se ne 
 dolazi preko noći, nikad niko nije došao na kul ideju preko noći. Ne postoji lampica u glavi niti jabuka koja je Njutnu pala na glavu. Ideje se dobijaju kada se nečim već bavite, kada čitate svašta, kada pričate sa kolegama, sa prijateljima. Kada naiđete na problem koji vas nervira i želite da ga rešite i spremni ste da posvetite svoje vreme tom problemu i znate kako biste mogli da ga rešite i želite da 
@@ -85,7 +85,7 @@ Zbog ovoga, nabavite svesku i beležite svoje ideje. Ideje vam nastaju kad se na
 
 
 Teorija, teorija i teorija i teorija i ...... 
-===============================================
+-------------------------------------------------
 
 Ako bih bio upitan da kažem neki svoj najveći propust u Petnici, onda bi to definitivno bilo neposvećivanje dovoljno pažnje teoriji. 
 Teorija je izuzetno važna da razumete oblast i problem kojim se bavite i da kasnije lakše možete da isplanirate implementaciju
@@ -111,7 +111,7 @@ koraku ćete verovatno pronaći dobre referentne metode sa kojima možete da por
 
 
 Implementacija
-================
+----------------
 
 Sada kada imamo ideju šta hoćemo, treba i da to napravimo. U ovom delu izrade projekta mnogi projekti propadaju jer se ispostavi
 da ili imaju loše poznavanje teorije ili loše poznavanje programiranja. Kako smo teoriju rešili (I hope so), ostalo je da rešimo
@@ -120,7 +120,7 @@ i ove "inženjerske" stvari. Pa da krenemo...
 
 
 Odabir alata
---------------
+=============
 
 Prvi korak je odabir alata, dakle jezik i frejmvork. 
 
@@ -138,7 +138,7 @@ Pre nego što krenete sa konkretnom izradom projekta, treba se prvo upoznati sa 
 biste se upoznali sa alatima i kako bi vam oni ušli "pod prste".
 
 Izdizajniraj sve
------------------
+====================
 
 Sada treba isplanirati konkretnu implementaciju. Napravite mali skicu kako želite da organizujete projekat i kod. Podelite sve u manje
 module i trudite se da moduli što manje zavise jedni od drugih. Trudite se da ovde što bolje uradite planiranje jer dobro planirane 
@@ -149,13 +149,13 @@ svega psihološki efekat da stalno napredujete jer ćete stalno čekirati nešto
 tekstova na ovu emu i kako se radi estimacija vremena tako da možete to detaljnije da pročitate. 
 
 Unit testovi
-------------
+=============
 
 Ovo je jako važan deo. Unit testovi su delovi koda koji automatski testiraju pojedinačne funkcionalnosti modula vašeg projekta. 
 Ovim postižete da stalno možete testirati vaš kod kad napravite izmenu i da se to sve radi automatski. Na Internetu ima mnogo objašnjenja i primera kako se koriste i prave unit testovi. Ako radite u Pajtonu, pogledajte [ovo](https://docs.python.org/3.6/library/unittest.html). 
 
 Git i CMake 
-------------
+==============
 
 Jako je važno da imate prostor za eksperimentisanje i mogućnost da se vratite na prethodno stanje kada nešto pokvarite. Zbog ovoga 
 je jako korisno da koristite neki sistem za verzionisanje kao što je [Git](https://git-scm.com/) a projekat možete da imate i na 
@@ -165,7 +165,7 @@ je jako korisno da koristite neki sistem za verzionisanje kao što je [Git](http
 
 
 Pisanje rada
-============
+--------------
 
 U ovoj fazi već možete da predahnete, težak deo je završen. Sada je potrebno da rezultate vašeg istraživanja predstavite kroz rad 
 koji bi trebalo da bude objavljen u zborniku radova ISP.
@@ -183,7 +183,7 @@ Rezultate merenja obavezno čuvajte u nekom sirovom formatu kao npr CSV jer se m
 radova pa će biti potrebna ponovna izrada grafika pa vam ponovo mogu zatrebati podaci.
 
 Za kraj
-=======
+---------
 
 Ovo je samo ukratko objašnjeno šta i kako se radi. Ponovo moram da naglasim da je sve ovo prikupljeno iz nekog mog ličnog iskustva. 
 Treba naglasiti da je najvažnije na kraju koliko ste naučili i koliko ste napredovali. Nemojte da vam cilj bude konferencija, neka vam cilj bude napredak vas samih. Cilj je da naučite nešto novo, da nešto otkrijete, da se družite i da uživate u radu. Kada ovo postavite kao cilj, konferencija je samo alat i usputna stanica. Ona vam služi da se dodatno isprobate u prezentovanju rada ljudima koji nisu iz
