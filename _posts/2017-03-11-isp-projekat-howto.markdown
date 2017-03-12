@@ -21,7 +21,7 @@ Kao stariji polaznik sam često dobijao pitanja od mlađih o tome kako se radi p
 Odabir projekta
 -------------------
 
-Odabir projekta je prva aza i ona se obavlja prilikom prijave na seminar. Predlog projekta se šalje u sklopu dokumentacije prilikom
+Odabir projekta je prva faza i ona se obavlja prilikom prijave na seminar. Predlog projekta se šalje u sklopu dokumentacije prilikom
 konkurisanja na seminar kao stariji polaznik. Ovde je bitno napomenuti da taj predlog projekta koji se šalje u prijavi za seminar ne mora biti konačan. Predlog se dodatno izrađuje tokom zimskog seminara uz konsultacije sa rukovodiocem i saradnicima na seminaru. 
 Ipak, važno je taj predlog tokom prijavljivanja na seminar napisati što bolje, kako bi se na zimskom moglo diskutovati o konkretnoj izradi projekta bez gubljenja vremena na traženje novog projekta. 
 
