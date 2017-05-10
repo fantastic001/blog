@@ -15,3 +15,10 @@ Sada se postavlja pitanje da li nam je isplativo da sve ovo implementiramo kad o
 Dakle, ako želimo pristupiti osobi za identifikacionim brojem ID, tada prvo primenimo transformaciju hash(ID) pa pristupimo listi osoba
 sa tim hešom i onda u toj maloj listi nađemo osobu koja nas interesuje. 
 
+Najjednostavnija heš funkcija jeste zapravo deljenje sa prostim brojem pa uzimanje ostatka. Na primer:
+
+	hash(x) = x % 1000003
+
+pored ovakve, postoji i mnogo drugih heš funkcija koje smanjuju mogućnost kolizije.
+
+Vreme pristupa je probabilističko i zavisi od verovatnoće da se među dva elementa desi kolizija. 
