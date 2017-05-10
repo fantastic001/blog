@@ -15,6 +15,8 @@ Pa da krenemo....
 Lista
 ------
 
+![Lista](https://en.wikipedia.org/wiki/File:Doubly-linked-list.svg)
+
 Lista se sadrži od struktura (čvorova) gde svaki čvor ima u sebi vrednost koju čuva i pokazivač na sledeći čvor u listi. Pored ovoga, čvor može imati i pokazivač na prethodni čvor u listi i tada je lista dvostruko povezana. 
 
 Implementacija čvora u programskom jeziku C bi izgledala ovako: 
@@ -32,6 +34,7 @@ Ovde smo koristili celobrojni tip kao primer tipa koju vrednost čvora može da 
 Listta podržava dodavanje elementa na kraj u O(1) vremenu, iteraciju kroz celu strukturu i pristupanje određenom 
 elementu u O(n) vremenu. Brisanje elementa se radi u O(1) ako nam je dat pokazivač na element koji treba da obrišemo
 ili u slučaju jednostruko povezane liste, pokazivač na prethodnika elementa koji treba obrisati. 
+
 
 Stek 
 -----
