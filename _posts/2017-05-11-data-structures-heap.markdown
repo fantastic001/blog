@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Neke strukture podataka - hip"
-date:   2017-05-11 18:15:00 +0100
+date:   2017-05-11 13:00:00 +0100
 categories: algorithms data-structures
 ---
 
