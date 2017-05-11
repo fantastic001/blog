@@ -2,7 +2,7 @@
 layout: post
 title:  "Bog vs Darvin - bitka bez pobednika ili kako nismo razumeli svrhu obrazovanja"
 date:   2017-05-15 18:15:00 +0100
-categories: algorithms data-structures
+categories: opinion education science
 ---
 
 Ovih dana se ponovo pojavila [polemika](http://rs.n1info.com/a246892/Vesti/Vesti/Posle-13-godina-Srbija-ponovo-muci-muku-s-Darvinom.html) o tome da li deca, uzrasta osmog razreda, treba da izučavaju teoriju evolucije. Da je vrag pojeo šalu, to pokazuje i činjenica da je ova peticija koju potpisuju akademici i doktori, stigla i do Ministarstva i do Skupštinskog odbora za obrazovanje. Pored ovih institucija, reagovali su i Univerzitet u Beogradu i Centar za promociju nauke. 
