@@ -5,7 +5,7 @@ date:   2017-05-10 22:00:00 +0100
 categories: algorithms data-structures
 ---
 
-Hip je truktura podataka koja nam omogućava da brzo i lako dođemo do maksimalnog elementa. Često se predstavlja kao stablo 
+Hip je struktura podataka koja nam omogućava da brzo i lako dođemo do maksimalnog elementa. Često se predstavlja kao stablo 
 zbog lakšeg objašnjavanja ali se tokom implementacije koristi niz. Hip se predstavlja kao stablo na sledeći način: za svaki čvor, njegova deca su uvek manja od tog čvora. Ovakva reprezentacija podataka nam omogućava da nam na vrhu stabla (korenu stabla) uvek bude najveći element. Slično, možemo i obrnuti situaciju, da za svaki čvor su njegova deca manja od tog čvora. U ovom slučaju dobijamo strukturu
 gde nam je na vrhu uvek najmanji element. U implementaciji, za izvedbu hipa koristimo niz tako da nam element a(i) bude čvor a elementi 
 a(2i+1) i a(2i + 2) su njegova deca. Isto tako, ako imamo čvor a(i) onda njegovom roditelju pristupamo kao elementu a((i-1)/2).
