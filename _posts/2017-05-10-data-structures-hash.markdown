@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Neke strukture podataka - heš tabele"
-date:   2017-05-12 18:15:00 +0100
+date:   2017-05-10 23:45:00 +0100
 categories: algorithms data-structures
 ---
 
