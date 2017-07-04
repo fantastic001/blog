@@ -95,7 +95,7 @@ Grananje
 
 Grananje se upotrebljava kada je potrebno razvijati feature nezavisno od ostalih ili kada se razvijaju dva feature-a nezavisno. Može da posluži i ako želimo da dati problem rešimo na više načina pa da vidimo koji se metod pokazuje bolje. U tom slučaju jednu granu ostavljamo a drugu brišemo. Grananje funkcioniše tako šro razvoj razdvojimo na grane i svaka ima svoju istoriju izmena, posle granu spajamo u glavnu granu (master).
 
-![Prikaz grananja](https://www.google.rs/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&ved=0ahUKEwjo1t6Un_DUAhWHDpoKHSM3DkgQjRwIBw&url=http%3A%2F%2Foracledev.wpengine.com%2Fversion-control%2F&psig=AFQjCNFrRECoRYrHDNlVYR4k7wZ-U5L08Q&ust=1499278859800865)
+![Prikaz grananja](http://redstack.files.wordpress.com/2013/05/version-control.png?w=640&h=238)
 
 Novu granu pravimo ovako:
 
