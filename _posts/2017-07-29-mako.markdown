@@ -1,0 +1,100 @@
+---
+layout: post
+title:  "Introducing Mako - small but rich organization tool which breaks UNIX philosophy"
+date:   2017-07-29 22:15:00 +0100
+categories: organization mako
+---
+
+![Mako screenshot](/images/mako.png)
+
+In the past few months I have been developing my own tool for managing tasks, schedules and To-Do lists. 
+The main reasong I decided to develop my own tool instead of using available tools is simple - I haven't found any tool which 
+has all-in-one setup and works on Linux, from CLI and has sync to some cloud. There's additional thing, I am strong believer in privacy of individual's data so I do not trust other services enough to upload my organizational data to their cloud systems. So I decided to make a tool which will be able to keep data in the cloud but keep it safe too. This is not implemented yet in Mako but I am working on that. Catch is to use encryption which is done on your computer and then upload encrypted data. Since Mako is open source, it is trusted that is is really on the client side. 
+
+So what is Mako and what it does? 
+
+Mako is a tool for keeping track of your tasks, To-Do lists, weekly schedules. It can also measure various things such that
+you are able to keep track of progress on projects and it can generate monthly and quartely reports of how your time is spent. 
+
+Since I strongly believe in UNIX philosophy for hte most part of software world, I have to say that when this kind of tool
+is concerned, this philosophy doesn't work for me so Mako breaks this philosophy of having specific tool for specific task. 
+
+Installation
+============
+
+Mako can be installed using pip or can be downloaded on [GitHub](https://github.com/fantastic001/Mako).
+
+if you decide to clone Git repository, just run setup.py install as root and there you are. 
+
+Basic usage
+============
+
+When you install Mako you are able to use it without any initialization part and configuration. So let's exaplin basic 
+infrastructure how database is organized. 
+
+Set of tasks is divided into projects where every project has its subprojects. For example, you can have university project and 
+then subproject for every course you are attending on the university. So, in university project, you can have algebra subproject 
+and every task related to algebra on the university can be placed here. So let's create our first project:
+
+	mako projects add university
+
+so now when you list your projects, it will show that you have one project:
+
+	~ mako projects 
+	Projects:
+	_________________
+	university
+	~ 
+
+Now it's time to add some subprojects to our university project:
+
+	mako project university subprojects add algebra
+
+now we can list subprojects of university project:
+
+	mako project university subprojects 
+
+When we have project and its subprojects we can add individual tasks to them:
+
+	mako project university subproject algebra tasks add "Read chapter 1" 2017-08-21 2
+
+First argument to task add option is desciption of the task, second is due date and third is estimated time to complete given task. This is important since Mako will calculate how much time you are spending on tasks and hoow this time relates to your expectations. 
+
+Now we cna list tasks:
+
+	mako project university subproject algebra tasks
+
+to increase spent time on a task, do the following:
+
+	mako project university subproject algebra task 1 do 2
+
+first you specify task index given by task list and after "do" you specify how much time did you spend doing particular task, this will increase spent time on a task every time you run "do" command. 
+
+To mark task as done:
+
+	mako project university subproject algebra task 1 done 
+
+Now, when you list tasks, you will see that our task is green instead of red which means it is marked as done. 
+
+
+Getting help
+==============
+
+Since one blogpost is not enough to explain whole functionality and since I explained just a little bit of this tool, I suggest to run:
+
+	mako help
+
+to see what you can use. 
+
+Conclusion
+==========
+
+This project is still in development and in the moment of writing this article, there is no documentation. Next steps are 
+fixing reported bugs and writing documentation as well as implementing additional features which will be concerned with DropBox sync.
+
+In the future, I plan implementing Android app and iOS app as well. 
+
+If you are interested in development, writing documentation or just want to report bug, please contact me via email or 
+fork project on GitHub and send pull requests.
+
+
