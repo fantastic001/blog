@@ -1,0 +1,61 @@
+---
+layout: post
+title:  "Emacs org-mode"
+date:   2017-11-01 21:15:00 +0100
+categories: emacs organization utilities
+---
+
+Već nekoliko godina koristim Emacs. Eto priznao sam. :D Ja sam Vim korisnik koji koristi Emacs. Emacs koristim samo u svrhu za koju
+ne koristim Vim a to je za sve ostalo što nije pisanje koda. Toliko ga koristim da sam napravio i [Python biblioteku](https://github.com/fantastic001/YAPyOrg) za parsiranje Emacs org dokumenata. Dakle, Emacs koristim prvenstveno za organizaciju i pisanje dokumenata. U tome mi pomaže [Emacs org-mode](http://orgmode.org/). Ovaj dodatak za Emacs je postao must-have na mom računaru. Bez ovoga ne idem nigde. Toliko je važno da hoću da sve što imam ima integraciju sa ovim. Plan mi je da i ovaj blog krenem da pišem u njemu. 
+
+Dakle, šta je tu zanimljivo? Pa da krenemo... 
+
+
+TODO liste
+----------
+
+Prva stvar koju možete videti kad ga uključite (napravite i otvorite .org fajl) je mogućnost da pravite lako TODO liste. Sintaksa je slefeća:
+
+	* TODO nešto 
+
+Ako pritisnete kombinaciju 'Control+t' stavka se markira kao DONE. Ako ponovo pritisnete datu kombinaciju stavka se briše pa ako opet pritisnete dobijate opet marker "TODO". Ako lupite alt+enter, dobijate novu stavku. Ove stavke su zapravo sekcije, ispod njih kada pišete vi 
+zapravo pišete sadržaj sekcije. Sekciju možete "sakriti" tako što se kursorom namestite na naslov sekcije (to sa zvezdicom) i kliknete <TAB>. 
+
+Ako držite Alt i kliknete strelicu na desno, sekcija postaje podsekcija a na levo dižete nivo sekcije. 
+
+Liste se prave sa znakom "+":
+
+	+ item 1 
+	+ item 2
+	....
+
+lupite alt+enter i dobijate novu stavku liste. 
+
+U dokumentima možete pisati i matematičke formule uz pomoć LaTeX-a. Njih ogradite sa "$$", npr:
+
+	$$ a^2 = \int f(x)dx $$ 
+
+renderovanje formula se vrši sa Control+c pa onda Control+x pa pritisnete "l". 
+
+Org-mode takođe podržava i export u različite formate, na primer u HTML. To možete uraditi tako što pritisnete Control+c Control+e.
+Izlazi vam prozor gde su vam dati tasteri koje treba pritisnuti za eksport u određeni format. 
+
+Možete uključiti (navezati, "inkludovati") druga org-mode dokumenta pa će u eksportovanom delu biti eksportovano sve. Zbogdno ako pišete veći dokument ili možda čak i knjigu. :) 
+
+	#+INCLUDE: "putanja/do/fajla.org"
+
+A da isključite sadržaj u eksportovanom dokumentu:
+
+	#+OPTIONS: toc:nil
+
+Da u eksportovanom dokumentu matematičke formule snimite kao slike (zgodno za pretraživače koji imaju problema sa matematičkim formulama ili recimo za Kindl):
+	
+	#+OPTIONS: tex:dvipng
+
+Da otvorite blok za izvorni kod upišete "\<s" pa lupite TAB i onda samo u nastavku upišete jezik koji hoćete, i bloku kad pozicionirate kursor i pritisnete Control+c pa onda ' (jednostruki navodnik), otvara  se prozor za pisanje koda, sa sve obojenom sintaksom datog jezika. :D Da zatvorite prozor i sačuvate kod, upotrebite istu kombinaciju tastera.
+
+Org-mode podržava i tabele sa sve mogućnošću pisanja formula i automatskog izračunavanja. 
+
+Ovo su samo neki tips and tricks, za više info valja posetiti stranicu i zvaničnu dokumentaciju alata. 
+
+Eto, napisao na brzinu tekstić, nahvalih ga lepo, sad je red da sami istražujete. Probajte i zavolećete ga. 
