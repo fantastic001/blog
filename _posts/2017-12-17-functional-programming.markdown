@@ -1,0 +1,365 @@
+---
+layout: post
+title:  "A bit of functional programming by example in Haskell"
+date:   2017-12-17 12:15:00 +0100
+categories: functional-programming software
+---
+
+Recently I've started reading about functional programming. When you have been programming using OOP principles 
+since you were beginner, it sounds a little bit strange to change approach all the way around. It is scary and sometimes hard. 
+As you are older and older, new experiences come hard to gain. In this article I will try to make some clarrifications about this 
+approach which starts to be a big deal in big software companies as well as startups. It was hard to me to change the way of thinking 
+so I am willing to make this process easier for you. I know you've been doing Java or c# for a long time. I know you know the 
+bad things in these languages. I know you are sick of OOP or you will eventully be sick of OOP. I will try to explain some pitfalls 
+of OOP first and then continue by explaining functional approach and how it solves all of that. I will give examples in Haskell 
+but you don't need to be familiar with Haskell to understand examples since they're pretty straighforward and I will give explanation
+for things which may seem strange.
+
+Mutability, thread-safeness history
+=========================================
+
+
+First of all, functional programming is type of declarative programming which means that we explain what is something instead 
+of giving instructions step by step which is seen in imperative programming. 
+For example, in functional programming we say "factorial of n is n times factorial of n-1 where factorial of 0 is 1". In 
+imperative approach, we say how to compute factorial of n: "start with 1 and say resul is 1 then increment counter to n and multiply result by counter and save it into result". Here you can see big difference in way of thinking. I personally think that declarative approach is much simpler.
+
+In above example you can see one important difference between these approaches. In declarative programming we define value only once. Translated in language you already know, think of this as using only constnt variables instead of common variables which can change state later. This is called immutability which means "when defined once, cannot be changed later". Take a look at the following example of C code:
+
+	#include <stdio.h>
+	
+	int f( int* x ) 
+	{
+		int res = (*x) + 1;
+		(*x)++;
+		return res;
+	}
+	
+	int main() {
+		int x = 5;
+		printf("%d\n", f(&x));
+		printf("%d\n", f(&x));
+		return 0;
+	}
+	
+Our function f changes state of x by increasing it by one and returns previous state increased by one. For a moment let's 
+orget about this function definitiion and imagine we only see main function. What would you guess out of it? It seems logical 
+that f(x) is always equal to f(x) because mathematically it is logical to one function gives the same value for the same 
+parameters. Here we can see this is not the case. This program will output "6 7" which is not logical untill we see definition
+of function. In functional approach this is not possible at all! In functtional approach we cannot mutate state and function 
+will return the same output for the same input, ALWAYS! 
+
+Now, you are probably asking why do we limit ourselves to not mutate objects? The answer is because we are undisciplined and 
+we need computers to limit us from making mistakes. It is always better to know you have bug when you read compile errors instead of 
+seeing end-user complains in bug tracker. 
+
+Another reason why immutability is great is that your program is thread-safe. When you do not change state of anything, you do not have race conditions and your program can be paralelized easily. This starts to be more and more important since we are at saturation 
+of Moor's curve and the only way to make computers faster is by adding multiple cores and this can be used efficiently only
+if your program supports parallelism. 
+
+Fun fact is that functional programming appeared before OOP. It appeared in 1950's and was introduced in Lisp developed in MIT. The reason why functional programming didn't survive was because, at that time, it was considered slow since architecture of computers didn't 
+agree with this concept. OOP seemed as logical approach and was designed for enterprise. Functional programming now is comming back since we have much faster computers and have requirements which fit with this approach (parallelism for instance).
+
+
+Data-in, data out model
+========================
+
+This model has a few principples which makes your code more functional, you can implement this approach even in your OOP
+code and make it more thread-safe. These are principles you should follow in your existing projects, no matter what language do you 
+use: 
+
+1. Every function returns data 
+2. For the same input, function always return the same output
+3. When the function is called many times with the same parameters, it ALWAYS returns the same outputs as it was called just once. 
+4. Function does not depend on outer environment such as global variables, databases etc...
+5. Function does not modify its input. 
+
+Even when you make OOP stuff, try avoiding changing state. For instance, avoid using setters in your class. You can implement your class such that it only has constructor and getter methods. If you want to use setter, setter has to return a new object with changed parameters, not change existing one. 
+
+Example: list in C
+===================
+
+Let's take an example where we will implement list of integers in C.
+
+Firt we will define our list element structure: 
+
+	typedef struct ListElem_t
+	{
+	        int value;
+	        struct ListElem_t* next;
+	} ListElem;
+	
+	
+
+You can see that element hold its value and pointer to next element in a list. This pointer can be NULL which means there's 
+nothing after this element.
+
+Now let's create method that will reserve memory for our element and return instance of this element:
+
+	ListElem* create_element(int value, ListElem* next)
+	{
+	        ListElem* elem = (ListElem*) malloc(sizeof(ListElem));
+	        elem->value = value;
+	        elem->next = next;
+	        return elem;
+	}
+	
+What does this method do is basically reserving memory for our element structure, assigning value to the new element 
+from parameters and assigns next element to the element given as argument. At the end, it returns new instance of this element. 
+
+Now we can create our List structure which basically has only pointer to the head of list: 
+
+	typedef struct
+	{
+	        ListElem* head;
+	} List;
+
+Now we will create function that, for a given list element, creates list with head assigned to the given list element: 
+
+	List* create_list(ListElem* head)
+	{
+	        List* l = (List*) malloc(sizeof(List));
+	        l->head = head;
+	        return l;
+	}
+	
+Nothing special so far, right? 
+
+Now let's make push method which will add element to the beggining of the list. This method will return a new instance of 
+list which will have head pointing to the new element while the remaining of the list is behind head so prevous head will be next 
+element of new head. At the first it seems that we will need to copy whole list and add new element and return this new list. This 
+approach is inefficient. The good news are that we do not have to do that. We will need to make new element and new list instance 
+whic has head pointing to the new element. Next pointer of new element will be just head of our list in arguments so we basically 
+do not copy anything. We can do this trick because immutability guarantees that elements of the list won't be changed in any time. 
+
+	List* push(List* l, int value)
+	{
+	        return create_list(create_element(value, l->head));
+	}
+
+Now let's make function that will return new list but without head of a given list (i.e. tail of list):
+
+	List* tail(List* l)
+	{
+	        if (l->head == NULL) return create_list(NULL);
+	        else return create_list(l->head->next);
+	}
+
+Here you can see tat we are checking is list empty by checkig is head pointing to NULL. Tail of empty list is empty list. 
+If list is not empty, we simply create new list which has head of next elemen of head of our given list. 
+
+	void print(List* l)
+	{
+	        if (l->head == NULL) printf("\n");
+	        else
+	        {
+	                printf("%d ", l->head->value);
+	                print(tail(l));
+	        }
+	}
+	
+So now we can test our list in main:
+
+	int main() {
+	        List *l = create_list(NULL);
+	        push(l, 5);
+	        print(l);
+	        List* l2 = push(l, 5);
+	        print(l2);
+	
+	        print(tail(l2));
+	        print(push(l2, 10));
+	        return 0;
+	}
+
+
+So you can see that when we add element in front of list, we assign this result to the new list since push returns new instance of 
+list where it has one additional element. 
+
+
+Introduction to Haskell 
+=======================
+
+Haskell is purely functional programing language. This means that functions recieve parameters, do not modify them and always return 
+result. This also means that function themselves are first class objects meaning that functions can be passed as parameters and 
+returned as result. 
+
+Haskell can be interpreted and compiled. Commonly used compiler for Haskell on UNIX-based systems is ghc and file extension for 
+Haskell code is ".hs".
+
+Haskell is strongly typed language which means that types of data are known in compilation time before even running executable. 
+Types in Haskell must begin with upper case letter. To test examples, you can run interactive mode with ghci. 
+
+Let's make our first function which takes a number and return square of that number.
+
+	
+	sq :: Int -> Int
+	sq x = x*x
+
+So we can run this in ghci like this:
+
+	ghci example.hs 
+	>>> sq 5 
+	25
+	>>>
+
+so you can see that we can call function and easily get result. We first declare function by specifying  what types of argument it recieves and what type it returns. After that, we can define our function. 
+
+Now let's define function that computes sum of two itegers:
+
+
+	add :: Int -> Int -> Int 
+	add a b = a+b
+
+Here we have two parameters and result. The reson we declared function like above is that this declration is actully not a function 
+with two parameters. In Haskell, functions can recieve only one parameter and return only one result. Here we have function 
+which takes one integer and returns function which takes another integer which then returns their sum. 
+
+This can be easily proven by passing only one parameter to the function:
+
+	inc = add 1
+
+Now inc is function which takes one parameter and returns that parameter increased by one. For instance
+
+
+	inc 5 
+
+will return 6.
+
+
+Pattern matching
+===================
+
+Something very useful in functional programming languages is pattern matching. Imagine you are trying to implement factorial. First you will check is parameter is zero. If it is, return 1, else return that number times factorial of number decreased by one. 
+In Haskell this checking can be easily written using pattern matching:
+
+	fact :: Int -> Int
+	fact 0 = 1
+	fact n = n * (fact (n-1))
+
+Pattern matching works in the following manner: it will check does arguments of function satisfy first condition, if yes, return given result, else go forward to next condition. 
+
+For example the following function will return 1 if any of its two arguments is zero, 0 otherwise:
+
+	anyzero :: Int -> Int -> Int
+	anyzero 0 x = 1
+	anyzero x 0 = 1
+	anyzero x y = 0
+
+
+Lists 
+==========
+
+Lists in Haskell are implemented like we did above in C. They are simply single-linked lists.
+
+To define list:
+
+	l = [1,2,3]
+
+to get head of the list you can simply do:
+	
+	head l 
+
+to get tail of list:
+
+	tail l
+
+you can do list concaenation which will merge two lists in a new list:
+	
+	l = l1 ++ l2
+
+to get list with new element added to the head (our push function):
+
+	l2 = 5 : l
+
+To get list as range of numbers:
+
+	range = [1..10] 
+
+Now we get to interesting stuff: list comprehension! 
+
+This is something you have already seen in math: you can define list by specifying its general element. For instance:
+
+	squares = [x*x | x <- [1..10]]
+
+or you can add additionall condition, for instance squares divisible by 3:
+
+	squares = [x*x | x <- [1..10], x*x `mod` 3 == 0]
+
+or to define list of tuples which have property that their distance from (0,0) is less than 1:
+
+	unitcircle = [(x,y) | x <- [0, 0.01..10], y <- [0,0.01..10], x*x + y*y < 1]
+
+Note that I have specified step for our ranges for x and y as well. 
+
+
+Some nice examples
+=====================
+
+
+Quick sort 
+
+	qsort :: [Int] -> [Int]
+	qsort [] = []
+	qsort l = (qsort [x | x<-l, x < y]) ++ [y] ++ (qsort [x | x<-l, x>y]) where y = (head l)
+
+Splitting string into words 
+
+	findFirstWord :: [Char] -> ([Char], [Char])
+	findFirstWord "" = ("", "")
+	findFirstWord " " = ("", "")
+	findFirstWord s =
+	    let (remaining, others) = findFirstWord $ tail s
+	        x = head s
+	    in if x == ' ' then ("", tail s) else (x : remaining, others)
+	
+	split :: [Char] -> [[Char]]
+	split "" = []
+	split s = let (x, y) = findFirstWord s
+	          in [x] ++ (split y)
+	
+
+String length 
+
+	strlen :: String -> Int
+	strlen s
+	    | s == "" = 0
+	    | otherwise = 1 + (strlen $ tail s)
+
+Working with BSTs 
+
+	data Node = Node {
+	        left :: Node,
+	        right :: Node,
+	        value :: Int
+	    } | EmptyNode
+	
+	tolist :: Node -> [Int]
+	tolist EmptyNode = []
+	tolist n = let l = tolist $ left n
+	               r = tolist $ right n
+	               v = value n
+	           in l ++ [v] ++ r
+	
+	append :: Node -> Int -> Node
+	append EmptyNode x = Node EmptyNode EmptyNode x
+	append n x = let v = value n
+	                 r = right n
+	                 l = left n
+	             in if x < v then Node (append l x) r v else Node l (append r x) v
+	
+	
+	fromlist :: [Int] -> Node -> Node
+	fromlist [] n = n
+	fromlist l n = let x = head l
+	               in fromlist (tail l) (append n x)
+	
+	bstsort :: [Int] -> [Int]
+	bstsort l = tolist (fromlist l EmptyNode)
+
+
+Future article 
+===============
+
+In the following article, I will explain monads and how they can be applied to make Haskell more IO-oriented such that we 
+can make useful apps. 
