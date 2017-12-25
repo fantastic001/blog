@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "A bit of functional programming by example in Haskell"
-date:   2017-12-17 12:15:00 +0100
+date:   2017-12-24 12:15:00 +0100
 categories: functional-programming software
 ---
 
@@ -141,12 +141,13 @@ Now let's make function that will return new list but without head of a given li
 
 	List* tail(List* l)
 	{
-	        if (l->head == NULL) return create_list(NULL);
-	        else return create_list(l->head->next);
+	        return create_list(l->head->next);
 	}
 
-Here you can see tat we are checking is list empty by checkig is head pointing to NULL. Tail of empty list is empty list. 
 If list is not empty, we simply create new list which has head of next elemen of head of our given list. 
+If list is empty, behavior of tail is not defined so we will end up with segmentation fault (we will try dereferencing NULL pointer).
+
+For debugging purposes we will make print function.
 
 	void print(List* l)
 	{
@@ -358,8 +359,201 @@ Working with BSTs
 	bstsort l = tolist (fromlist l EmptyNode)
 
 
-Future article 
-===============
+Monads
+========
 
-In the following article, I will explain monads and how they can be applied to make Haskell more IO-oriented such that we 
-can make useful apps. 
+In pure functional programming languages, you cannot change state. This is core concept and very powerful one. 
+The problem is that our real world needs functionality to change state. Computer architecture is built on idea to change state. 
+Even basic operations such as printing to console output require to change state (state of console in this example). 
+
+The way to change state in functional languages is by using monads. Monads are actually mathematical objects which are applied 
+to computer science. 
+
+Basically, monad is data type which "surrounds" another type with additional functionality. For every monad, we have to define 
+two functions: return and bind. 
+
+Monad wraps another, say, primitive type and adds additional functionality. 
+
+To implement monad, we need to implement two functions: return and bind 
+
+Function return takes our pure type and return wrapped type. By using this function, we can convert pure types to our wrapped 
+types which hold state.
+
+When we have functions that take one type and return another, it ecomes impossible to do composition in standard way. We can
+solve this by using bind. Bind function takes our wrapped type and function whic takes pure type and returns wrapped type. Bind returns
+wrapped type and does following: unwraps our first argument and passes it to function, then "merges" result of a function 
+with passed argument and returns it. This is best illustrated wit simple example. Let's make type Debuggable which is basically 
+integer with list of strings which represents debug info. We first make type Debuggable and then implement bind and ret. Other 
+functions are implemented the same way as inc which increases number by one and stores message in a log. 
+
+	data Debuggable = Debuggable (Int, [[Char]]) deriving (Show)
+	
+	
+	ret :: Int -> Debuggable 
+	ret x = Debuggable (x, [])
+	
+	bind :: Debuggable -> (Int -> Debuggable) -> Debuggable
+	bind x f = Debuggable (y, z ++ b) where Debuggable (a,b) = x 
+	                                        Debuggable (y,z) = f(a)
+	
+	inc :: Int -> Debuggable  
+	inc x = Debuggable (x+1, ["Number increased by one"])
+	
+Note how we do unwrapping and wrapping in bind. There we return our result with concatenated list of debug info from a given parameter
+and additional info provided by calling function. 
+
+We arederiving Show here to make our type printable on console. Now we can do something like this: 
+
+	*Main> ret 5 
+	Debuggable (5,[])
+	*Main> inc 5 
+	Debuggable (6,["Number increased by one"])
+	*Main> bind (ret 5) inc 
+	Debuggable (6,["Number increased by one"])
+	*Main> bind (bind (ret 5) inc) inc
+	Debuggable (7,["Number increased by one","Number increased by one"])
+	*Main> 
+
+Haskell has its own way of defining monads by implementing these operators such that Haskell understands them correctly as monads. 
+	
+	import Control.Applicative -- Otherwise you can't do the Applicative instance.
+	import Control.Monad (liftM, ap)
+	
+	data Debuggable a = Debuggable (a, [[Char]]) deriving (Show)
+	-- needed since newer versions of GHC
+	instance Functor Debuggable where
+	  fmap = liftM
+	
+	instance Applicative Debuggable where
+	  pure  = return
+	  (<*>) = ap
+	------------------------
+	
+	instance Monad Debuggable where 
+	  return x = Debuggable (x, [])
+	  (>>=) (Debuggable (a,b)) f = Debuggable (y, z ++ b) where Debuggable (y,z) = f(a)
+	
+	inc :: Int -> Debuggable Int
+	inc x = Debuggable (x+1, ["Number increased by one"])
+
+Now we can do something like this:
+
+	*Main> (inc 5) >>= (\x -> (return x) >>= inc)
+	Debuggable (7,["Number increased by one","Number increased by one"])
+	*Main>
+
+You can see how we use bind operator here. Haskell has syntatic sugar for this and it's called do-notation
+
+	inc2 :: Int -> Debuggable Int 
+	inc2 num = do 
+	  x <- inc num
+	  y <- inc x 
+	  return y 
+
+Unit Monad
+===========
+
+This is just unit wrapping around type, nothing special: 
+
+
+	import Control.Applicative -- Otherwise you can't do the Applicative instance.
+	import Control.Monad (liftM, ap)
+	
+	data Unit a = Unit a deriving (Show)
+	
+	instance Functor Unit where
+	  fmap = liftM
+	
+	instance Applicative Unit where
+	  pure  = return
+	  (<*>) = ap
+	
+	instance Monad Unit where 
+	  return x = Unit x
+	  (>>=) (Unit x) f = f x
+
+
+Maybe Monad 
+============
+
+Useful if you have something which can be "null" or undefined. Value of this type can be something useful or nothing. 
+
+
+	import Control.Applicative -- Otherwise you can't do the Applicative instance.
+	import Control.Monad (liftM, ap)
+	
+	data Maybe a = Just a | Nothing
+	
+	instance Functor Maybe where
+	  fmap = liftM
+	
+	instance Applicative Maybe where
+	  pure  = return
+	  (<*>) = ap
+	
+	instance Monad Maybe where 
+	  return x = Just x
+	  (>>=) (Nothing) f = Nothing
+
+
+
+IO Monad 
+===========
+
+
+This monad can handle IO operations. In Haskell this monad is special because it changes state of world only with IO object 
+provided to main function. Main function is the first function which is run when you compile your program and run it as 
+executable without interactive mode. HAHAHAHA I know what you are thinking, we are there babies! We are going to make Hello World!
+
+you can compile your program with:
+
+	ghc hello.hs -o hello -dynamic 
+
+and run it with:
+
+	./hello
+
+and here it is:
+
+	main :: IO ()
+	main = putStrLn "Hello world!" 
+
+
+Let's make small i/o program! 
+
+	main :: IO ()
+	main = do
+	  putStrLn "Enter your name"
+	  name <- getLine
+	  putStrLn $ "Your name is " ++ name
+
+
+Appendix 1: data types
+=========================
+
+you can create data types like so:
+
+	data Person = Person {
+		firstName :: String,
+		lastName :: String,
+		age :: Int
+	}
+
+and then you can get data from Person value like this:
+
+	fullName p = (firstName p) ++ (lastName p)
+
+or create new value:
+
+	john = Person {firstName = "John", lastName = "Johnson", age=55}
+
+Appendix 2: Interesting links 
+===============================
+
+https://downloads.haskell.org/~ghc/latest/docs/html/libraries/
+
+https://hackage.haskell.org/
+
+https://robots.thoughtbot.com/a-rest-api-with-haskell-and-snap
+
+
