@@ -134,6 +134,7 @@ Also, with this syntax we can grab head and tail of array:
 	> head
 	1
 	> 
+
 Pattern matching 
 ==================
 
