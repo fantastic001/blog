@@ -5,8 +5,6 @@ date:   2018-02-07 15:15:00 +0100
 categories: python
 ---
 
-Introduction 
-==============
 
 ArgumentStack is a small python library which helps you to make argument parsing easy. It is based on nice argument 
 structure where your arguments are structured like a tree. Nice example of this is nmcli command for network manager, for instance you can do:
