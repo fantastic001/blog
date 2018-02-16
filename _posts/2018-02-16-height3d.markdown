@@ -703,7 +703,7 @@ This project is still in development and I know that there's still much of boile
 code needed to implement some stuff. I will post about that when I make changes. You can see more examples on repository under 
 `functional` directory, here are some photos what can be done (from examples in repository):
 
-~[Example 1](/images/height3d/3.png)
+![Example 1](/images/height3d/3.png)
 
 
-~[Example 1](/images/height3d/4.png)
+![Example 1](/images/height3d/4.png)
