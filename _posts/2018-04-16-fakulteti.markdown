@@ -5,7 +5,7 @@ date:   2018-04-16 17:15:00 +0100
 categories: opinion education
 ---
 
-Bliži se i taj famozni prijemni. Loš termin za objavljivanje ovoog članka jer je sasvim moguće da se većina budućih studenata već odlučila koji će fakultet 
+Bliži se i taj famozni prijemni. Loš termin za objavljivanje ovog članka jer je sasvim moguće da se većina budućih studenata već odlučila koji će fakultet 
 da upiše. Ipak, zna se, na Internetu sve ostaje pa i ovaj članak. Zbog ovoga ovo može služiti svim budućim srednjoškolcima, mamama i tatama, učiteljima, nastavnicima i profesorima. Može služiti i bakama i dekama da prestanu da gnjave studente "zašto studiraš X godina" a naročito treba da služi onima koji su sa ne-tehničkih fakulteta koojima je čudno kako to da loši studenti na, recimo, ETF-u imaju veću platu nego oni sa desetkama. Zbog svega ovoga je nastao ovaj članak. Da odgovorim na stalno pitanje srednjoškolaca "a koji je fax najbolji" i da isto 
 odgovorim na pitanje "a zašto se ne cimaš previše oko faksa?". 
 
@@ -17,7 +17,7 @@ Kada pitate većinu ljudi šta im suštinski treba u životu, oni svi odgovaraju
 
 Zbog svega navedenog, izabrani ciljevi su jako loš način da se posvetite njima jer se može desiti da ih nikada ne ispunite a da ne znate zašto se to dešava. 
 
-Da sve nije tako crno, goovori i činjenica da je dosta ljudi srećno, zdravo i bogato. Samo je razlika u tome što im ovo nisu bili ciljevi već posledica nekih drugih ciljeva. Život je jako kompleksna stvar i naravno da ne postoji jednoznačan cilj koji neko može da uzme kao zvezdu vodilju ali zato postoje neke vrednosti za koje se možete boriti i koje isključivo zavise od vas::
+Da sve nije tako crno, govori i činjenica da je dosta ljudi srećno, zdravo i bogato. Samo je razlika u tome što im ovo nisu bili ciljevi već posledica nekih drugih ciljeva. Život je jako kompleksna stvar i naravno da ne postoji jednoznačan cilj koji neko može da uzme kao zvezdu vodilju ali zato postoje neke vrednosti za koje se možete boriti i koje isključivo zavise od vas::
 
 1. Da imate što više ljudi na koje možete da se oslonite 
 
@@ -27,13 +27,13 @@ Da sve nije tako crno, goovori i činjenica da je dosta ljudi srećno, zdravo i 
 
 4. Da budete asertivni 
 
-5. Da imate dosta široko znanje i da ste sposoobni da povezujete stvari iz različitih domena
+5. Da imate dosta široko znanje i da ste sposobni da povezujete stvari iz različitih domena
 
 6. ...
 
 ===Šta je glavna geška kod odlučivanja koji ćeš faks da upišeš?===
 
-Većina srednjoškolaca ide botoom-up principom "upišem faks pa ću onda da vidim kako dalje". Takvo razmišljanje često dovodi do toga da ili omašite zanimanje ili podredite sve studiranju i na
+Većina srednjoškolaca ide bottom-up principom "upišem faks pa ću onda da vidim kako dalje". Takvo razmišljanje često dovodi do toga da ili omašite zanimanje ili podredite sve studiranju i na
 kraju, kad je već kasno, shvatite da nemate ništa od toga. Drugi, pravilniji, princip je top-down odnosno "hajde da vidim šta želim, šta očekujem od faksa kao sredstva da dođem do cilja i onda da izaberem najbolje sredstvo koje mi pomaže da dođem do cilja".Sa ovakvim razmišljanjem, čak i da promenite cilj jednog dana, faks ostaje samo sredstvo do postizanja nekog drugog, višeg, cilja. 
 
 ===Kakvi su fakulteti za IT?===
