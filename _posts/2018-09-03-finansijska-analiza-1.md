@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Uvod u finansijsku analizu - 1. deo"
-date:   2018-09-03 19:15:00 +0100
+date:   2018-09-03 18:15:00 +0100
 categories: finance
 ---
 Finansijska analiza je oblast koja spaja finansije, matematiku a od skoro i računarske nauke. 
