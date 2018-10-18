@@ -21,7 +21,7 @@ Dakle, jedini protok novca koji postoji u tom slučaju jeste zarada od dividendi
 
 Akcija = {D1, D2, ....}
 
-ako uzmemo model procene vrednosti po kom smo procenjivali i obveznice, dobijamo da je cena akcija: <pre> $$ V = \sum_{i=1}^\infty \frac{D_i}{(1 + r)^i} $$ </pre>
+ako uzmemo model procene vrednosti po kom smo procenjivali i obveznice, dobijamo da je cena akcija: $$ V = \sum_{i=1}^\infty \frac{D_i}{(1 + r)^i} $$ 
 
 Ovde r izražava rizik kao i kamatnu stopu.
 
@@ -32,7 +32,7 @@ Akcije koje imaju konstantnu dividendu
 
 Iako većina kompanija nema fiksnu dividendu (težnja za rastom), analiza ovog slučaja daje rezultat koji nam može pomoći da analiziramo kompleksnije slučajeve:
 
-U ovom slučaju je akcija = {D, D, D, ...} i onda dobijamo modell kao kod fiksnih večnih obveznica da je <pre> $$ v = D / r $$ </pre>
+U ovom slučaju je akcija = {D, D, D, ...} i onda dobijamo modell kao kod fiksnih večnih obveznica da je $$ v = D / r $$
 
 Dakle, sa povećanjem rizika se cena smanjuje a sa povećanjem dividende se cena povećava. 
 
@@ -40,10 +40,10 @@ Akcije sa konstantnim rastom
 -------------------------------
 
 Naravno, gornji model nije realan jer ne uzima u obzir da profit kompanije može da raste. Zbog ovoga uvodimo malo kompleksniji model koji kaže da se dividenda u svakoj iteraciji povećava 
-za g procenata i time dobijamo da je akcija = {D, D(1+g), D(1+g)^2, ...}. Iz ovoga se dobija da je <pre> $$ V = \frac{D}{r - g} $$ </pre>.
+za g procenata i time dobijamo da je akcija = {D, D(1+g), D(1+g)^2, ...}. Iz ovoga se dobija da je $$ V = \frac{D}{r - g} $$ 
 
 Odavde se može zaključiti da što je rast veći (manji od r) i što je početna dividenda veća, to je cena akcije veća. Ako je rast mali u poređenju sa rizikom, onda to utiče na smanjenje
-vrednosti akcije. iz ovog modela se može i izraziti rizik koji kaže da je: <pre> $$ r = \frac{D}{P} + g $$ </pre>. Izraz D/P se može videti sa listinga akcije na berzi i on
+vrednosti akcije. iz ovog modela se može i izraziti rizik koji kaže da je: $$ r = \frac{D}{P} + g $$ . Izraz D/P se može videti sa listinga akcije na berzi i on
 predstavlja odnos poslednje isplaćene dividende i trenutne cene akcije. Ako znamo koliki je potencijalni rast ove kompanije, znamo i koliki je rizik. 
 
 Berza
