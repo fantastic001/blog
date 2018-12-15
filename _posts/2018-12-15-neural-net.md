@@ -66,7 +66,7 @@ oh wait....is this linear regression? Yeah....
 
 but wait again... we said earlier that our f is scalar function but here we say that neural network has M output nodes, WTF??? Well, we can still update our weights, just with slightly modified gradient of error: 
 
-$$ \nabla E = \sum_{n=0}^K (f(x_{n}, w_{t}) - y_{n})\nabla f = \sum_{n=0}^K \sum_{j=0}&M (f_{j}(x_{n}, w_{t}) - y_{n,j}) \nabla f_{j} $$ 
+$$ \nabla E = \sum_{n=0}^K (f(x_{n}, w_{t}) - y_{n})\nabla f = \sum_{n=0}^K \sum_{j=0}^M (f_{j}(x_{n}, w_{t}) - y_{n,j}) \nabla f_{j} $$ 
 
 Now we are back in the game, we just treat this product as scalar product and we are fine. It can be proven mathematically that this is correct assumption but here there is no need for it. 
 
