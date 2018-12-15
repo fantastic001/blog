@@ -72,7 +72,7 @@ Now we are back in the game, we just treat this product as scalar product and we
 
 Now, as we have calculated this error gradient, we just need to calculate gradient for every possible function. Well, this is easy: 
 
-$$ \frac{\partial f_{j}}{\partiial w_{i,j}} = x_{i} $$ 
+$$ \frac{\partial f_{j}}{\partial w_{i,j}} = x_{i} $$ 
 
 
 "Advanced stuff"
