@@ -18,5 +18,5 @@ linkedin_url: https://www.linkedin.com/in/stefan-no%C5%BEini%C4%87-222b9b68
 
 # Build settings
 markdown: kramdown
-gems:
+plugins:
   - jekyll-seo-tag
