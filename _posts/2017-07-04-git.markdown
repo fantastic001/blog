@@ -19,7 +19,7 @@ Po načinu funkcionisanja, sistemi za kontrolu verzija mogu biti centralizovani 
 svaki član tima ima svoj repozitorijum i tim funkcioniše tako što se repozitorijumi svakog člana tima
 sinhronizuju međusobno.
 
-Centralizovani sistemi imaju taj problem što prilikom kvara na serveru gde se nalazi repozitorijum, člaovi tima ne mogu da rade na razvoju. Kod distribuiranih sistema se ovaj problem rešava upravo time što svako ima svoju lokalnu verziju repozitorijuma. 
+Centralizovani sistemi imaju taj problem što prilikom kvara na serveru gde se nalazi repozitorijum, članovi tima ne mogu da rade na razvoju. Kod distribuiranih sistema se ovaj problem rešava upravo time što svako ima svoju lokalnu verziju repozitorijuma. 
 
 Git
 ====
@@ -30,13 +30,13 @@ postoje softveri koji omogućavaju upotrebu Gita upotrebom grafičkih alata. Rad
 Inicijalizacija repozitorijuma
 ===============================
 
-Recimo da \elimo da napravimo naš repozitorijum lokalno, ovo radimo tako što prvo napravimo direktorijum gde ćemo držati naš kod a zatim inicijalizujemo git repozitorijum u njemu. 
+Recimo da \želimo da napravimo naš repozitorijum lokalno, ovo radimo tako što prvo napravimo direktorijum gde ćemo držati naš kod a zatim inicijalizujemo git repozitorijum u njemu. 
 
 	mkdir repo 
 	cd repo 
 	git init
 
-Sada, za svaku promenu u kodu će git beležiti ko j je napravio. Zbog ovoga je važno da podesimo
+Sada, za svaku promenu u kodu će git beležiti ko ju je napravio. Zbog ovoga je važno da podesimo
 naše ime i adresu elektronske pošte koja će se pokazati u listi izmena. 
 
 	git config --global user.name "Pera Perić"
@@ -45,7 +45,7 @@ naše ime i adresu elektronske pošte koja će se pokazati u listi izmena.
 Operacije nad repozitorijumom
 ===============================
 
-Sada kada smo inicijalizovali naš repozitorijum i relki git-u ko smo i koji nam je mejl kako bi on znao da zabeleži ispravno ko je uradio određenu izmenu, sada možemo da krenemo sa razvojem softvera. 
+Sada kada smo inicijalizovali naš repozitorijum i rekli git-u ko smo i koji nam je mejl kako bi on znao da zabeleži ispravno ko je uradio određenu izmenu, sada možemo da krenemo sa razvojem softvera. 
 
 Dodavanje fajlova 
 ------------------
@@ -93,7 +93,7 @@ Da obrišemo poslednji komit i vratimo se na prethodni:
 Grananje 
 ---------
 
-Grananje se upotrebljava kada je potrebno razvijati feature nezavisno od ostalih ili kada se razvijaju dva feature-a nezavisno. Može da posluži i ako želimo da dati problem rešimo na više načina pa da vidimo koji se metod pokazuje bolje. U tom slučaju jednu granu ostavljamo a drugu brišemo. Grananje funkcioniše tako šro razvoj razdvojimo na grane i svaka ima svoju istoriju izmena, posle granu spajamo u glavnu granu (master).
+Grananje se upotrebljava kada je potrebno razvijati feature nezavisno od ostalih ili kada se razvijaju dva feature-a nezavisno. Može da posluži i ako želimo da dati problem rešimo na više načina pa da vidimo koji se metod pokazuje bolje. U tom slučaju jednu granu ostavljamo a drugu brišemo. Grananje funkcioniše tako što razvoj razdvojimo na grane i svaka ima svoju istoriju izmena, posle granu spajamo u glavnu granu (master).
 
 ![Prikaz grananja](http://redstack.files.wordpress.com/2013/05/version-control.png?w=640&h=238)
 
@@ -124,7 +124,7 @@ Dobre prakse
 Tokom vremena, nastao je dobar model kako organizovati grane i razvoj softvera. Ovo nije must-to-do 
 ali se pokazuje kao jako koristan metod. 
 
-Prvo, master grana služi za stabilnu verziju softvera. U njoj se uvek nalazi stabilna verzija softvera. Druga grana je dev u kojoj se nalazi trenutna razvojna verzija softvera. Za svaku novu stavku ili komponentu koju treba implementirati, potrebno je napraviti specijalnu granu za tu stavku. Na primer, ako želimo da implementiramo novu komponentu u GUI-u, recimo iscrtavanje statističkih podataka u nekom prozoru, napravimo granu graphing iz dev grane. Na tome radimo neko vreme i onda radimo merge u dev granu. Kada sve istestiramo i spremni smo da objavimo novu stabilnu verziju, radimo merge dev grane u master. U ovom trenutkune sme biti grana za dodatne stavke. Kada uradimo merge u master, obavezno kreiramo tag da obeležimo novu verziju: 
+Prvo, master grana služi za stabilnu verziju softvera. U njoj se uvek nalazi stabilna verzija softvera. Druga grana je dev u kojoj se nalazi trenutna razvojna verzija softvera. Za svaku novu stavku ili komponentu koju treba implementirati, potrebno je napraviti specijalnu granu za tu stavku. Na primer, ako želimo da implementiramo novu komponentu u GUI-u, recimo iscrtavanje statističkih podataka u nekom prozoru, napravimo granu graphing iz dev grane. Na tome radimo neko vreme i onda radimo merge u dev granu. Kada sve istestiramo i spremni smo da objavimo novu stabilnu verziju, radimo merge dev grane u master. U ovom trenutku ne sme biti grana za dodatne stavke. Kada uradimo merge u master, obavezno kreiramo tag da obeležimo novu verziju: 
 
 	git checkout master 
 	git merge dev 

@@ -70,14 +70,14 @@ algoritam a ne poredi ga sa nečim što nam je poznato - ne znači ništa!
 
 Ne možete reći da je nešto dobro ili loše ako nemate sa čim da uporedite. Ako se ispostavi da je vaš algoritam lošiji od postojećeg, to je isto validan rad. Bolje rad sa prikazom novog, lošijeg algoritma nego rad sa prikazom algoritma za koji ne znamo kakav je - ne znamo ni da je loš ni da je dobar. 
 
-Dake, moramo imati nešto sa čim poredimo i moramo imati način kako da izmerimo šta nas zanima. 
+Dakle, moramo imati nešto sa čim poredimo i moramo imati način kako da izmerimo šta nas zanima. 
 
 Merenje može biti bilo šta, na primer, preciznost prepoznavanja obrazaca u mašinskom učenju, odstupanje od tačne vrednosti kod numeričkih simulacija, brzina algoritma, broj linija koda kod novog jezika itd... 
 
 Ali ....kako do ideje za kul projekat?
 =======================================
 
-OK, sad znamo šta nam treba sve da imamo dobar predlog projekta ali još uvek ne znamo kako da dođemo na ideju. Do dobre ideje se ne 
+OK, sada znamo šta nam treba sve da imamo dobar predlog projekta ali još uvek ne znamo kako da dođemo na ideju. Do dobre ideje se ne 
 dolazi preko noći, nikad niko nije došao na kul ideju preko noći. Ne postoji lampica u glavi niti jabuka koja je Njutnu pala na glavu. Ideje se dobijaju kada se nečim već bavite, kada čitate svašta, kada pričate sa kolegama, sa prijateljima. Kada naiđete na problem koji vas nervira i želite da ga rešite i spremni ste da posvetite svoje vreme tom problemu i znate kako biste mogli da ga rešite i želite da 
 to proverite - to je ideja koju tražite. 
 
@@ -126,7 +126,7 @@ Prvi korak je odabir alata, dakle jezik i frejmvork.
 
 Ovde je najbolje da uzmete nešto gde se snalazite, rad na projektu nije prilika da naučite novi jezik. Uzmite ono što vam radi 
 posao. Isto važi i za frejmvork s tim da ovde može biti izuzetak ako rešavate problem kojim se nikada do sada niste bavili
-pa koristite nešto što do sada nikada niste koristili. U tom slučaju, dobro treba iščitati dokumentaciju a ne površno koristit
+pa koristite nešto što do sada nikada niste koristili. U tom slučaju, dobro treba iščitati dokumentaciju a ne površno koristiti
 frejmvork. Ovde je jako bitno i obratiti pažnju na konvencije i terminologiju koju koristi frejmvork jer se može desiti da se ne 
 poklapa sa onim na šta ste navikli pa ćete morati da se prilagodite, bar dok čitate dokumentaciju. 
 
@@ -146,7 +146,7 @@ i dobro izdizajnirane stvari rade bolje i lakše se kasnije modifikuju i nadogra
 
 Posao implementacije izdelite na male zadatke od kojih svaki traje najviše 2 sata. Usitnite sve u sitna crevca. Ovim postižete pre
 svega psihološki efekat da stalno napredujete jer ćete stalno čekirati nešto kao "done" i to će držati vašu motivaciju. Ima mnogo 
-tekstova na ovu emu i kako se radi estimacija vremena tako da možete to detaljnije da pročitate. 
+tekstova na ovu temu i kako se radi estimacija vremena tako da možete to detaljnije da pročitate. 
 
 Unit testovi
 =============
@@ -159,7 +159,7 @@ Git i CMake
 
 Jako je važno da imate prostor za eksperimentisanje i mogućnost da se vratite na prethodno stanje kada nešto pokvarite. Zbog ovoga 
 je jako korisno da koristite neki sistem za verzionisanje kao što je [Git](https://git-scm.com/) a projekat možete da imate i na 
-[GitHabu](https://github.com/) kako biste osigurali, ako izgubite kod na vašem računaru, isti imate i onlajn. Pored ovoga, ako objavite kod kao open source, možete tražiti pomoć od drugih kolega i lako im proslediti link do vašeg projekta. Githab nudi i istem za prijavljivanje bagova, upravljanje zadacima kao i mesto za pisanje dokumentacije tako da vam i to može koristiti. 
+[GitHabu](https://github.com/) kako biste osigurali, ako izgubite kod na vašem računaru, isti imate i onlajn. Pored ovoga, ako objavite kod kao open source, možete tražiti pomoć od drugih kolega i lako im proslediti link do vašeg projekta. Githab nudi i sistem za prijavljivanje bagova, upravljanje zadacima kao i mesto za pisanje dokumentacije tako da vam i to može koristiti. 
 
 [CMake](https://cmake.org/) je sistem za automatizaciju kompajliranja vašeg projekta. Ima dosta mogućnosti kao što su i pokretanje testova, traženje potrebnih biblioteka da se linkuju sa programom koji se kompajlira, izrada man stranica iz izvornih fajlova za dokumentaciju, instalacija projekta na sistem itd. Jako korisno pa pogledajte, značiće vam. 
 
@@ -176,7 +176,7 @@ Dobar metod koji su meni saradnici u Petnici pokazali za pisanje naslova jeste d
 
 Ostatak rada prvo organizujte. Organizujte sadržaj samog rada. Uvod bi trebalo da sadrži opis problema kao i dosadašnja rešenja. Pored ovoga, u uvod možete i uvesti neke teorijske napomene i terminologiju. 
 
-Metod je onaj deo koji ste vi radli tokom leta. To je ono šta ste radili. Ovde opišite detaljan pristup i kako ste uradili svaku stvar. Naravno, nema potrebe da pišete stvari koje nisu vezane za konkretno rešavanje problema. Nemojte da pišete kako ste koristili Git, Cmake, u koliko ste sati jeli i da li ste uopšte jeli i spavali. Pišite samo ono što je vezano za izradu konkretnog metoda koji se bavi rešavanjem problema koji ste opisali u uvodu. 
+Metod je onaj deo koji ste vi radili tokom leta. To je ono šta ste radili. Ovde opišite detaljan pristup i kako ste uradili svaku stvar. Naravno, nema potrebe da pišete stvari koje nisu vezane za konkretno rešavanje problema. Nemojte da pišete kako ste koristili Git, Cmake, u koliko ste sati jeli i da li ste uopšte jeli i spavali. Pišite samo ono što je vezano za izradu konkretnog metoda koji se bavi rešavanjem problema koji ste opisali u uvodu. 
 
 U rezultatima i diskusiji treba navesti ... rezultate. Dakle, grafici, primeri generisanog koda itd. 
 Rezultate merenja obavezno čuvajte u nekom sirovom formatu kao npr CSV jer se može desiti da vaši grafici nisu prikladni za zbornik

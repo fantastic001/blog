@@ -14,10 +14,10 @@ If your site is only presentation of your organization (only provides informatio
 have a blog, it should be static because it only provides information. How will you maintain that site is up to you and you can use
 web interface to do maintenance or can leave it to your console skills. 
 
-Well, if blogs should be static, why platforms like Wordpress or Drupal even exist? I don't know, maybe someone thought that 
+Well, if blogs should be static, why platforms like WordPress or Drupal even exist? I don't know, maybe someone thought that 
 UNIX simplicity model is a joke. It isn't. These platforms are unsecure and unstable. These platforms have so many layers that it makes them unstable and unsecure. There are many points where system can break or can be already broken. 
 
-Static web pages are example how blogging can be done, without Wordpress, without PHP or Python. I don't say they are bad for making web apps (ok, PHP is bad for this stuff) but I say that they are bad for making blog platforms or for making presentations on the web. 
+Static web pages are example how blogging can be done, without WordPress, without PHP or Python. I don't say they are bad for making web apps (OK, PHP is bad for this stuff) but I say that they are bad for making blog platforms or for making presentations on the web. 
 
 In this post, I am going to explain how static sites can be used for blogs and organizations if they are providing information, it 
 can be used if they want to collect information like comments. 

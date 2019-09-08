@@ -21,8 +21,8 @@ greške i pogrešne odluke eliminišemo vraćanjem na stariju verziju softvera. 
 primer takvog alata je Git o kom će biti više reči kasnije. 
 
 Tokom razvoja, treba znati kada je određeni posao završen. Pre svega, čitav razvoj je potrebno podeliti u manje delove 
-kako bismo mogli da radimo delić po delić. Ovo je značajno i iz tehničke i iz pihološke strane. Prvo, psihološki, čoveku je lakše
-da održ motivaciju kada radi deo po deo i kada vidi napredak u tom radu. Sa tehničke strane, rad deo po deo nam omogućava 
+kako bismo mogli da radimo delić po delić. Ovo je značajno i iz tehničke i iz psihološke strane. Prvo, psihološki, čoveku je lakše
+da održi motivaciju kada radi deo po deo i kada vidi napredak u tom radu. Sa tehničke strane, rad deo po deo nam omogućava 
 da svaki delić izolujemo i zasebno testiramo. U ovome nam pomažu unit testovi koji upravo tome služe. Napišemo testove 
 za modul koji razvijamo i razvijamo ga sve dok taj modul ne prođe sve napisane testove. Ovako znamo i kada je posao završen - onog trenutka kada modul prolazi sve unit testove. Ovim e eliminiše i još jedna, danas loša, osobina - perfekcionizam. Danas, kada je važno biti
 brz i brzo menjati stvari u malim iteracijama perfekcionizmu nema mesta i posao je završen onog trenutka kada je modul dovoljno dobar. 

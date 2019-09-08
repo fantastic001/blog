@@ -5,7 +5,7 @@ date:   2017-05-10 23:15:00 +0100
 categories: ssh networking
 ---
 
-Ovaj članak objašnjava kako podesiti reversni SSh tunel i time omogućiti forvardovanje portova preko mreže. Ovo je 
+Ovaj članak objašnjava kako podesiti reversni SSH tunel i time omogućiti forvardovanje portova preko mreže. Ovo je 
 izuzetno korisno iz dva razloga:
 
 1. Enkripcija neenkriptovanog protokola
@@ -21,7 +21,7 @@ Primer ovoga je dat sledećom linijom:
 
 Sada sve što se pošalje na port 7000 na računaru B, biće prosleđeno računaru A na port 50.
 
-Na primer, da omogućimo SSh konekciju na računar A na port 22 sa porta 7000 možemo uraditi:
+Na primer, da omogućimo SSH konekciju na računar A na port 22 sa porta 7000 možemo uraditi:
 
 	ssh -fN -R 7000:localhost:22 username@B-ip
 

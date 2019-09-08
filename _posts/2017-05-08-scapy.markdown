@@ -24,7 +24,7 @@ Sastavljanje paketa
 ---------------------
 
 Ako želimo da sastavimo neki paket koji u svom IP delu sadrži adresu odredišta, u svom TCP delu sadrži odredišni port 
-sa sadržj datom kao string, to možemo učiniti na sledeći način:
+sa sadržajem datim kao string, to možemo učiniti na sledeći način:
 
 	pkt = IP(dst="192.168.4.5")/TCP(dport=55)/"Poruka"
 

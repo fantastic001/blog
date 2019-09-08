@@ -31,7 +31,7 @@ Implementacija čvora u programskom jeziku C bi izgledala ovako:
 
 Ovde smo koristili celobrojni tip kao primer tipa koju vrednost čvora može da ima. U ovom primeru je lista zapravo lista celobrojnih elemenata.
 
-Listta podržava dodavanje elementa na kraj u O(1) vremenu, iteraciju kroz celu strukturu i pristupanje određenom 
+Lista podržava dodavanje elementa na kraj u O(1) vremenu, iteraciju kroz celu strukturu i pristupanje određenom 
 elementu u O(n) vremenu. Brisanje elementa se radi u O(1) ako nam je dat pokazivač na element koji treba da obrišemo
 ili u slučaju jednostruko povezane liste, pokazivač na prethodnika elementa koji treba obrisati. 
 

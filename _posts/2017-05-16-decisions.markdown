@@ -6,7 +6,7 @@ categories: life
 ---
 
 Tokom svog života, veliki deo vremena provedemo u odlučivanju. To nas prati od samog početka života. Još kao mali donosimo 
-odluke koju igračku želimo da dobijemo, sa kim želimo da se igramo. Kada malo porastemo, kada krenemo u školu, tu dolazimo do odluka koju ćemo školu da upišemo. Posle fakulteta ili srednje škole, donosimo odluke čime želimo da se bavimo dalje. Tokom obavljanja posla, gde god radili, donosimo odluke o tome kako želimo da radimo i na čemu. Kada dobijemo decu, kada imamo porodicu, donoimo odluke od kojih zavii i budućnost te dece. Posle e to prenosi i na naše unuke kad ostarimo. Zbog svega ovoga, pravilno donošenje odluka je 
+odluke koju igračku želimo da dobijemo, sa kim želimo da se igramo. Kada malo porastemo, kada krenemo u školu, tu dolazimo do odluka koju ćemo školu da upišemo. Posle fakulteta ili srednje škole, donosimo odluke čime želimo da se bavimo dalje. Tokom obavljanja posla, gde god radili, donosimo odluke o tome kako želimo da radimo i na čemu. Kada dobijemo decu, kada imamo porodicu, donoimo odluke od kojih zavisi i budućnost te dece. Posle e to prenosi i na naše unuke kad ostarimo. Zbog svega ovoga, pravilno donošenje odluka je 
 jako važno. Ipak u školi nam nikad ne kažu jednu jako važnu lekciju a to je kako da odluke donosimo kako treba. To se indirektno provuče kroz život nekako mislimo da nam je to urođeno. Problem je što nije. 
 
 Društveni pritisci i pritisci okruženja nas često teraju da donosimo odluke. Svi žele da znaju naše mišljenje, naše stavove 

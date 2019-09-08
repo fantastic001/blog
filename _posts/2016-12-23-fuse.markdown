@@ -9,7 +9,7 @@ During summer camp at [Petnica Science Center](http://petnica.rs/) you can get a
 to work on building her own file system. This is open source project and can be found [here on GitHub](https://github.com/ivanovicM/mi-file-system). This is proof of concept of how file system work and it is built as stand-alone command-line application which has its own shell and uses RAM as its storage for data. Structure and organization of data is specific to project but it looks pretty much as first implementations of file systems.
 
 
-You can copy files from your system's file system to mi-fs but not vice-versa. The main problem is that it was a command-line application so we decided to implement our own kernel module for mi-fs. The problem with that approach is trouble with all kernelrelated development stuff. You have to be careful to avoid making kernel panic and so on. We found [FUSE](https://github.com/libfuse/libfuse) - File system in user space. You simply implement all operations you want your file system to support and start it as normal desktop app. FUSE kernel module will handle requests from outside world and redirect them to your application to handle requests. Your application responds with numerical return value and FUSE handles that response and then it knows what to do next. It is pretty simple (at least simpler than making your own kernel module and taking care of memory allocation and how to not make damage). I have to say that I am not happy about its documentation Documentation is auto-generated from code and sometimes it was very hard to understand what writer meant. 
+You can copy files from your system's file system to mi-fs but not vice-versa. The main problem is that it was a command-line application so we decided to implement our own kernel module for mi-fs. The problem with that approach is trouble with all kernel related development stuff. You have to be careful to avoid making kernel panic and so on. We found [FUSE](https://github.com/libfuse/libfuse) - File system in user space. You simply implement all operations you want your file system to support and start it as normal desktop app. FUSE kernel module will handle requests from outside world and redirect them to your application to handle requests. Your application responds with numerical return value and FUSE handles that response and then it knows what to do next. It is pretty simple (at least simpler than making your own kernel module and taking care of memory allocation and how to not make damage). I have to say that I am not happy about its documentation Documentation is auto-generated from code and sometimes it was very hard to understand what writer meant. 
 
 The whole thing is based of some kind C-style virtual function. You have structure with pointers to function, you implement these functions, set fields in that structure, call FUSE init function with that structure as argument and let FUSE handle all the stuff that follows. 
 
@@ -42,7 +42,7 @@ This is an example of our main function:
 	}
 	
 	
-As you can see, we create structure and then we have to assign needed pointers to our functions. Functions are declared in interface.h so we can use them here. I will not explain how to implement every function alone and I will exaplin that in some other blogpost aimed for that. I will just leave one example of implementation of function getattr as well as implementation of functions used in this implementation: 
+As you can see, we create structure and then we have to assign needed pointers to our functions. Functions are declared in interface.h so we can use them here. I will not explain how to implement every function alone and I will explain that in some other blog post aimed for that. I will just leave one example of implementation of function getattr as well as implementation of functions used in this implementation: 
 
 
 getattr.cpp:
@@ -141,7 +141,7 @@ context.cpp:
 		fstat->st_blocks = 1;
 	}
 
-I have ommited some debugging code to make it more readable.
+I have omitted some debugging code to make it more readable.
 
 Implementation of these function was easy because we already had structure and implementation of file system behaviour. We only had to make interface to FUSE. 
 

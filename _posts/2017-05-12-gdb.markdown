@@ -13,7 +13,7 @@ Jedan od takvih alata je i GDB. On je konzolni alat (pokreće se iz komandne lin
 onda vam je princip rada ovakvih programa poznat. Ako niste, možete se upoznati detaljnije sa ovim načinom rada [ovde gde je opisan rad na Linuksovoj komandnoj liniji](http://linuxcommand.org/).
 
 U ovom članku neće detaljno biti opisan rad u komandnoj liniji i biće pretpostavljeno da znate da napišete jednostavan program 
-u programskoj jeziku C kao i da taj napisani kod znate da kompajlirate upotrebom GCC kompajlera. 
+u programskom jeziku C kao i da taj napisani kod znate da kompajlirate upotrebom GCC kompajlera. 
 
 Prikazaćemo rad GDB-a kroz primere i objasniti neke njegove mogućnosti kako bismo lakše uočili greške u našem programu.
 
@@ -87,7 +87,7 @@ Da bismo je izvršili, kucamo komandu next ili skraćeno n:
 	14		printf("%d\n", f);
 	(gdb) 
 
-Šta se sad desilo? Pa kako se naša linija izvršila, promenljivoj f je dodeljen rezultat funkcije fact. Da bismo odštampali vrednost promenljive f, koristimo komandu print ili skraćeno p:
+Šta se sada desilo? Pa kako se naša linija izvršila, promenljivoj f je dodeljen rezultat funkcije fact. Da bismo odštampali vrednost promenljive f, koristimo komandu print ili skraćeno p:
 
 	(gdb) p f 
 	$1 = 0

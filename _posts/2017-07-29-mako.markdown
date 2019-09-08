@@ -8,15 +8,15 @@ categories: organization mako
 ![Mako screenshot](/images/mako.png)
 
 In the past few months I have been developing my own tool for managing tasks, schedules and To-Do lists. 
-The main reasong I decided to develop my own tool instead of using available tools is simple - I haven't found any tool which 
+The main reason I decided to develop my own tool instead of using available tools is simple - I haven't found any tool which 
 has all-in-one setup and works on Linux, from CLI and has sync to some cloud. There's additional thing, I am strong believer in privacy of individual's data so I do not trust other services enough to upload my organizational data to their cloud systems. So I decided to make a tool which will be able to keep data in the cloud but keep it safe too. This is not implemented yet in Mako but I am working on that. Catch is to use encryption which is done on your computer and then upload encrypted data. Since Mako is open source, it is trusted that is is really on the client side. 
 
 So what is Mako and what it does? 
 
 Mako is a tool for keeping track of your tasks, To-Do lists, weekly schedules. It can also measure various things such that
-you are able to keep track of progress on projects and it can generate monthly and quartely reports of how your time is spent. 
+you are able to keep track of progress on projects and it can generate monthly and quarterly reports of how your time is spent. 
 
-Since I strongly believe in UNIX philosophy for hte most part of software world, I have to say that when this kind of tool
+Since I strongly believe in UNIX philosophy for the most part of software world, I have to say that when this kind of tool
 is concerned, this philosophy doesn't work for me so Mako breaks this philosophy of having specific tool for specific task. 
 
 Installation
@@ -29,7 +29,7 @@ if you decide to clone Git repository, just run setup.py install as root and the
 Basic usage
 ============
 
-When you install Mako you are able to use it without any initialization part and configuration. So let's exaplin basic 
+When you install Mako you are able to use it without any initialization part and configuration. So let's explain basic 
 infrastructure how database is organized. 
 
 Set of tasks is divided into projects where every project has its subprojects. For example, you can have university project and 
@@ -58,9 +58,9 @@ When we have project and its subprojects we can add individual tasks to them:
 
 	mako project university subproject algebra tasks add "Read chapter 1" 2017-08-21 2
 
-First argument to task add option is desciption of the task, second is due date and third is estimated time to complete given task. This is important since Mako will calculate how much time you are spending on tasks and hoow this time relates to your expectations. 
+First argument to task add option is description of the task, second is due date and third is estimated time to complete given task. This is important since Mako will calculate how much time you are spending on tasks and how this time relates to your expectations. 
 
-Now we cna list tasks:
+Now we can list tasks:
 
 	mako project university subproject algebra tasks
 
@@ -80,7 +80,7 @@ Now, when you list tasks, you will see that our task is green instead of red whi
 Getting help
 ==============
 
-Since one blogpost is not enough to explain whole functionality and since I explained just a little bit of this tool, I suggest to run:
+Since one blog post is not enough to explain whole functionality and since I explained just a little bit of this tool, I suggest to run:
 
 	mako help
 

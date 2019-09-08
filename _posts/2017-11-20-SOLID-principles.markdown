@@ -7,7 +7,7 @@ categories: agile oop programming software
 
 In this article it will be explained one design process which really fascinated me and held me awake during nights while 
 thinking of how much is it cool and powerful. First of all, these principles are set of design decision during software development
-which are intended to boost maintainability of software and make software development continious and easily 
+which are intended to boost maintainability of software and make software development continuous and easily 
 adaptable to new specifications by its users. 
 
 This set of principles is promoted by Robert C. Martin. He's fascinating man and you should watch all of his talks. This 
@@ -36,7 +36,7 @@ Open/closed principle
 ======================
 
 
-This principle basically says thet design should be open for extensions and closed for modifications. This means it is better 
+This principle basically says that design should be open for extensions and closed for modifications. This means it is better 
 to add new feature by adding new class than by changing existing classes. For example, you are developing some kind of software 
 that will compute something based on different methods. This could be some machine learning software or bot for games. In the
 future, you want to support adding additional algorithms. You should implement every algorithms as separate class that share common
@@ -46,7 +46,7 @@ additional view by adding additional class, not by modifying existing classes.
 
 This is easily done by inheritance. You should never change class, especially its interface which is seen by user. 
 
-One way to achieve this is by making abstract class for one process or operatio and to implement this class for particular case. 
+One way to achieve this is by making abstract class for one process or operation and to implement this class for particular case. 
 You should abstract everything and soon you will see that new features are handled by adding stuff, not changing existing stuff.
 
 If you use some framework for GUI, abstract its behaviour and implement concrete class using this framework. When you want to 
@@ -67,12 +67,12 @@ If if have two classes. One T and one S which is inherited from T. This principl
 with objects of type S and we will maintain correctness of a program. 
 
 So, what this actually mean? Let's say we have our two classes mentioned above. Every method of T has its own preconditions, 
-postconditions and invariants. 
+post conditions and invariants. 
 
 Your subtype must satisfy the following criteria:
 
 1. Preconditions cannot be strengthened in a subtype.
-2. Postconditions cannot be weakened in a subtype.
+2. Post conditions cannot be weakened in a subtype.
 3. Invariants (conditions held true) of the supertype must be preserved in a subtype.
 4. immutability cannot be subtyped to mutable class 
 
@@ -112,7 +112,7 @@ modules inherit and implement interfaces while high level modules use these inte
 Classical example is when you try to implement file browser and you want to support multiple file systems or remote file browsing
 like FTP. The idea here is to make browsing interface which will call concrete implementation if needed. 
 
-The most popular pattern which supports this principle is MVC (Model, View, Controller). In this scenarion, different modules
+The most popular pattern which supports this principle is MVC (Model, View, Controller). In this scenario, different modules
 handle data representation, graphical interface or data visualization and data handling and manipulation. 
 
 

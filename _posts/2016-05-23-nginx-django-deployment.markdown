@@ -6,7 +6,7 @@ categories: web
 ---
 
 Well, you have developed your first version of your super-mega-giga web app and you want to deploy it. Your application consists of
-two parts: API (backend) and your javascript code (frontend). In this article, I am going to explain how to deploy your API
+two parts: API (backend) and your java-script code (frontend). In this article, I am going to explain how to deploy your API
 written in Django and your frontend written in AngularJS with a little bit of help of NodeJS and npm. 
 
 API deployment - Docker configuration
@@ -14,7 +14,7 @@ API deployment - Docker configuration
 
 It is good practice to use docker to isolate your environment for every app you are planning to use. We will set up 2 docker containers: one for Django app and one for database we use in our backend. 
 
-When you have situation like this: to have more containers bound in some way, it is always recommanded to use docker-compose to 
+When you have situation like this: to have more containers bound in some way, it is always recommended to use docker-compose to 
 easily manage your containers. 
 
 First, we will make Dockerfile for our container serving our Django API

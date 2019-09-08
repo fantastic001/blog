@@ -14,7 +14,7 @@ Dakle, šta je tu zanimljivo? Pa da krenemo...
 TODO liste
 ----------
 
-Prva stvar koju možete videti kad ga uključite (napravite i otvorite .org fajl) je mogućnost da pravite lako TODO liste. Sintaksa je slefeća:
+Prva stvar koju možete videti kad ga uključite (napravite i otvorite .org fajl) je mogućnost da pravite lako TODO liste. Sintaksa je sledeća:
 
 	* TODO nešto 
 
@@ -40,7 +40,7 @@ renderovanje formula se vrši sa Control+c pa onda Control+x pa pritisnete "l".
 Org-mode takođe podržava i export u različite formate, na primer u HTML. To možete uraditi tako što pritisnete Control+c Control+e.
 Izlazi vam prozor gde su vam dati tasteri koje treba pritisnuti za eksport u određeni format. 
 
-Možete uključiti (navezati, "inkludovati") druga org-mode dokumenta pa će u eksportovanom delu biti eksportovano sve. Zbogdno ako pišete veći dokument ili možda čak i knjigu. :) 
+Možete uključiti (navezati, "inkludovati") druga org-mode dokumenta pa će u eksportovanom delu biti eksportovano sve. Zgodno ako pišete veći dokument ili možda čak i knjigu. :) 
 
 	#+INCLUDE: "putanja/do/fajla.org"
 
