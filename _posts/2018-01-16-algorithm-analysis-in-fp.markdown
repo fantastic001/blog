@@ -5,8 +5,8 @@ date:   2018-01-16 23:15:00 +0100
 categories: functional-programming software algorithms
 ---
 
-This article has purpose to demonstrate the way of reasoning when algoritmh analysis comes for programs written in 
-functional programming paradigm. I will give some examples in Haskell to demostrate methodology and also explain some
+This article has purpose to demonstrate the way of reasoning when algorithm analysis comes for programs written in 
+functional programming paradigm. I will give some examples in Haskell to demonstrate methodology and also explain some
 core theorems in algorithm analysis. Here I will focus especially to time analysis in asymptotic manner which is when 
 we take limit where size of input goes to infinity. 
 
@@ -14,7 +14,7 @@ List comprehension
 ==================
 
 
-Firt let's start by simple things. List comprehension is a way to define new list in terms of existing one. It is similar to what 
+First let's start by simple things. List comprehension is a way to define new list in terms of existing one. It is similar to what 
 you can see in math. For example the following list:
 
 	l = [x^2 | x <- [1..10]]
@@ -44,7 +44,7 @@ We can check that in the following example:
 	fact 1 = 1
 	fact n = n * fact (n-1)
 
-so if we calculate fact 100 and call it again, or call fact 99 we will get result immediately. Tihs is because in functional 
+so if we calculate fact 100 and call it again, or call fact 99 we will get result immediately. This is because in functional 
 programming, function always returns the same result when called with the same parameters so this can be cached. This 
 is good for us when worrying about time but may be bad if we worry about space. This complicates our time analysis 
 For example, consider Fibonacci number generator:

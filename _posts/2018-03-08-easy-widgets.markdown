@@ -7,7 +7,7 @@ categories: python libraries projects
 
 Recently I have been developing python library for handling interface in console. The best solution I have found 
 was URWID which is used in WICD interface (WiFi manager in console). I wasn't satisfied enough with library 
-and I started develping from URWID base to make something easier to use and in this article I will 
+and I started developing from URWID base to make something easier to use and in this article I will 
 explain basic usage of that library. 
 
 
@@ -42,14 +42,14 @@ Adding main menu
 ===================
 
 There's `Menu` class which can be used for creating menus in applications. This class is subclass of `Widget` which means it has 
-`show()` method. Convetion is that all classes which end with `Box` are dialogs and they are shown with `exec()` method while 
+`show()` method. Convention is that all classes which end with `Box` are dialogs and they are shown with `exec()` method while 
 other widgets are shown with `show()` method. As you can guess, Box objects are shown like dialogs, keeping parent widgets behind them. In conclusion widgets are shown on whole screen while dialogs are shown only on part of screen keeping parent visible as well. 
 
-`Menu` is of type widget and can be shown with `show()` method. This class also has method `addOption` which recieves function accepting one argument (urwid button instance) and title of item in menu. 
+`Menu` is of type widget and can be shown with `show()` method. This class also has method `addOption` which receives function accepting one argument (urwid button instance) and title of item in menu. 
 
 The following example illustrates how to use Menu class. 
 
-	m = Menu("The main menuy")
+	m = Menu("The main menu")
 	m.addOption("Do something", lambda btn: do_something())
 	m.addOption("Exit", lambda btn: Application.exit())
 

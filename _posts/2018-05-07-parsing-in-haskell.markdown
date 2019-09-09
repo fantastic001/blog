@@ -40,14 +40,14 @@ Tree is represented by its nodes which represent operation and operands as its c
 
 Let's take a look into simple definition of tree nodes for "+", "*", "-" and "/" operations. First of all, let's define them. We know that multiplication and division has priority over addition and subtraction. This means that multiplication and division is always subtree of addition and subtraction. Also, we know that brackets have priority over multiplication and division, so brackets (and expression in them) is always subtree of multiplication and division. For this reason, we will have three types of nodes because we have three levels of priority. 
 
-When we are talking about addition and subtraction, we are talking about expression which has operantor (+ or -) and two operands. One of them is multiplication and another is expression (because we want to have a+b+c). But what if we have only a*b? Then we need to enable that expression can be just one tiny multiplication.
+When we are talking about addition and subtraction, we are talking about expression which has operator (+ or -) and two operands. One of them is multiplication and another is expression (because we want to have a+b+c). But what if we have only a*b? Then we need to enable that expression can be just one tiny multiplication.
 We also have to enable something like "-a" so we will have special kind of negative expression.
 
-Similar thing for term, term is either multiplication, divisio or just factor. 
+Similar thing for term, term is either multiplication, division or just factor. 
 
 Factor is just identifier, just number or expression inside brackets. 
 
-To summmarize, our definitions look liker this: 
+To summarize, our definitions look liker this: 
 
 	expression = term "+" expression | term "-" expression | term | "-" term
 	term = factor "*" term | factor "/" term | factor 
@@ -108,7 +108,7 @@ Now, how parsing is done? Well, when you see definitions of nodes above, we can 
 		[] -> ParseError 0 "Cannot take token"
 		t:ts -> ParseResult (t:ts) t 
 
-This function represents computation which returns current tooken as result and does not change state of tokens (this token remains in list of tokens).
+This function represents computation which returns current token as result and does not change state of tokens (this token remains in list of tokens).
 
 Another function is expect which will return parsing error if given token does not exist in list. If it exists, it will remove that token from list of tokens. You can see this function by other names in other articles or literature, for example they call it "eat" somewhere because it "eats" token if it exists. 
 
@@ -118,7 +118,7 @@ Another function is expect which will return parsing error if given token does n
 		[] -> ParseError 0 "Expected token but no such token found"
 		t:ts -> if t == token then ParseResult ts t else ParseError 0 $ "Expected token " ++ (show token) ++ " but " ++ (show t) ++ "found"
 
-Alsoo, for outputing errors during parsing, we will have some simple function which always returns error with given message: 
+Also, for outputting errors during parsing, we will have some simple function which always returns error with given message: 
 
 	
 	cerror :: String -> Parse a
@@ -189,4 +189,4 @@ and for expression:
 Conclusion
 ============
 
-So, as you can see, parsing can be very easily implemented in Haskell Extensions to additional syntax and grammmar can be easily done through adding more methods and tree nodes. 
+So, as you can see, parsing can be very easily implemented in Haskell Extensions to additional syntax and grammar can be easily done through adding more methods and tree nodes. 

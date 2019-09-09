@@ -45,7 +45,7 @@ Here we just set our vertex coordinates. Fragment shader is shown below:
 	  gl_Position = vPosition;
 	}
 
-As you can see, you write shaders just you would write them in your standard OpenGL application, these are asic shaders suitable for drawing 2D objects. 
+As you can see, you write shaders just you would write them in your standard OpenGL application, these are basic shaders suitable for drawing 2D objects. 
 
 
 Now let's see our code implementation for this particular example:
@@ -130,7 +130,7 @@ Now let's see our code implementation for this particular example:
 	}
 	
 As you can see, here we can recognize basic opengl element with GLEW. The catch point here is that we have Objects `Program` which 
-is responsile for compiling and linking our shaders and `Buffer` which is OOP implementation of buffer communication to GPU. 
+is responsible for compiling and linking our shaders and `Buffer` which is OOP implementation of buffer communication to GPU. 
 
 In this example, we draw our window with three colors and then draw red triangle on it. 
 
@@ -271,8 +271,8 @@ This before was just introduction of what Height3D can do but it is not all!
 To fully use benefits of OOP, there's class SDLLoop which can be subclassed and you can implement event handling, initialization and similar things there. Also, this class exposes `onFrame()` method which can be implemented to do drawing of objects for us. 
 
 Also, there's `Scene` class which can draw all objects for you, using that class you can set camera position, perspective parameters
-as well as to add objects. Here important thing is to distinguish between object and model. Model is descruption of how something is drawn on unit cube, it specifies vertex coordinates, texture coordinates, vertex normals etc. You can implement your own model 
-by sublassing `AbstractModel` class and then implementing needed methods. In these methods, you have to return needed coordinates, colors and normals. 
+as well as to add objects. Here important thing is to distinguish between object and model. Model is description of how something is drawn on unit cube, it specifies vertex coordinates, texture coordinates, vertex normals etc. You can implement your own model 
+by subclassing `AbstractModel` class and then implementing needed methods. In these methods, you have to return needed coordinates, colors and normals. 
 
 Object is made of model, its size, position, assigned texture etc... 
 
@@ -663,7 +663,7 @@ You can now use your arrows to navigate through the scene.
 Height fields
 =============
 
-You can make models easily by making height fields. A height field is model which has two levels: bottom and top one. For every coordinate on unit cube, it draws surface starting from bottom level and neding on top level. You can specify height by giving function 
+You can make models easily by making height fields. A height field is model which has two levels: bottom and top one. For every coordinate on unit cube, it draws surface starting from bottom level and ending on top level. You can specify height by giving function 
 which returns `pair<float, float>` where first number is starting height and second number is ending height. To use this, you have to include  HeightfieldModel class:
 	
 	#include <structures/heightfield/LayeredHeightfield.hpp>

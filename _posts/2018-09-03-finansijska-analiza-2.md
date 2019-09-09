@@ -12,8 +12,8 @@ koje možemo upotrebiti bilo direktno bilo u modelovanju.
 Akcije
 --------
 
-Akcija je udeo u kompaniji. Ona investitoru omogućava glasaško pravo za biranje upravnog odbora kao i pravo na dividendu. Dividenda je deo profita koji, na odluku upravnog
-odboora, idu investitorima. Najčešće u intervalima od 3 meseca ili godinu dana ali to opet zavisi od odluke upravnog odbora. 
+Akcija je udeo u kompaniji. Ona investitoru omogućava glasačko pravo za biranje upravnog odbora kao i pravo na dividendu. Dividenda je deo profita koji, na odluku upravnog
+odbora, idu investitorima. Najčešće u intervalima od 3 meseca ili godinu dana ali to opet zavisi od odluke upravnog odbora. 
 
 Investitoor svoju zarad može da dobije na 2 načina: od dividendi ili od prodaje akcije (kapitalna dobit). U analizi koja sledi pretpostavićemo da investitor ne prodaje akciju i da zarađuje samo od dividendi. 
 
@@ -32,7 +32,7 @@ Akcije koje imaju konstantnu dividendu
 
 Iako većina kompanija nema fiksnu dividendu (težnja za rastom), analiza ovog slučaja daje rezultat koji nam može pomoći da analiziramo kompleksnije slučajeve:
 
-U ovom slučaju je akcija = {D, D, D, ...} i onda dobijamo modell kao kod fiksnih večnih obveznica da je $$ v = D / r $$
+U ovom slučaju je akcija = {D, D, D, ...} i onda dobijamo model kao kod fiksnih večnih obveznica da je $$ v = D / r $$
 
 Dakle, sa povećanjem rizika se cena smanjuje a sa povećanjem dividende se cena povećava. 
 
@@ -50,17 +50,17 @@ Berza
 ------
 
 
-Berza je mesto za trgovanje akcijama i drugim hartijama od vrednosti. Što se akcije tiče, bitno je napomenuti da tu imamo dva tržišta: primarno i sekundarno. Na primarnom tržištu je prodavac uvek kompanija koja svoje akcije prodaje po prvi put (Initial Public Offering - IPO) koja ima potrebu za investiranjem u svooju tehnologiju i time traži finansijsku pomoć javnosti 
-kako bi finansirala svoje operacije. Na sekundarnom tržištu investitori trguju akcijama i tu se cene određuju principom ponude i potražnje a koje smo modelovali gore sa dva jednoostavna modela. 
+Berza je mesto za trgovanje akcijama i drugim hartijama od vrednosti. Što se akcije tiče, bitno je napomenuti da tu imamo dva tržišta: primarno i sekundarno. Na primarnom tržištu je prodavac uvek kompanija koja svoje akcije prodaje po prvi put (Initial Public Offering - IPO) koja ima potrebu za investiranjem u svoju tehnologiju i time traži finansijsku pomoć javnosti 
+kako bi finansirala svoje operacije. Na sekundarnom tržištu investitori trguju akcijama i tu se cene određuju principom ponude i potražnje a koje smo modelovali gore sa dva jednostavna modela. 
 
-Trgovanje izgleda tako što investitori koji žele akciju da kupe kažu koliko su spremni da plate za nju dok investitori koji prodaju akcciju kažu koliko su spremni da dobiju za akciju (koliko je cene). Kada se izjednači minimmalna cena prodavca (ona najmanja) i maksimalna cena koju je ponudio neki kupac, onda se desi transakcija između ta dva investitora. Ovo se danas uglavnom radi elektronski preko Interneta.
+Trgovanje izgleda tako što investitori koji žele akciju da kupe kažu koliko su spremni da plate za nju dok investitori koji prodaju akciju kažu koliko su spremni da dobiju za akciju (koliko je cene). Kada se izjednači minimalna cena prodavca (ona najmanja) i maksimalna cena koju je ponudio neki kupac, onda se desi transakcija između ta dva investitora. Ovo se danas uglavnom radi elektronski preko Interneta.
 
 
 Opcije
 ---------
 
-Ovde ću samo ukratko objasniti šta su opcije i kako rade, mislim daova dva blogposta ne treba da budu literatura iz finansijske analize. Dakle, opcije su hartije od vrednosti
-sa kojima se isto može trgovati kao i sa bilo kojim drugim hartijama od vrednosti. Opcija nam daje pravo da kupimo ili prodamo akciju po ceni koja je određena opciijom u zadatom terminu ili do zadatog termina. Dakle, one nas ne obavezuju da izvršimo transakciju već nam daju pravo da po fiksnoj ceni izvršimo transakciju. Tako, na primer, ako imamo opciju koja kaže da možemo kupiti akciju A po ceni od $500 u roku od mesec dana a cena akcije posle 15 bude $650 onda mi možemo iskoristiti opciju i kupiti po $500 a prodati po $650 i profitirati $150. Međutim, pošto ništa nije besplatno, u ovu računicu moramo uračunati i cenu oppcije C tako da bismo zapravo dobili $150 - C. 
+Ovde ću samo ukratko objasniti šta su opcije i kako rade, mislim da ova dva blogposta ne treba da budu literatura iz finansijske analize. Dakle, opcije su hartije od vrednosti
+sa kojima se isto može trgovati kao i sa bilo kojim drugim hartijama od vrednosti. Opcija nam daje pravo da kupimo ili prodamo akciju po ceni koja je određena opcijom u zadatom terminu ili do zadatog termina. Dakle, one nas ne obavezuju da izvršimo transakciju već nam daju pravo da po fiksnoj ceni izvršimo transakciju. Tako, na primer, ako imamo opciju koja kaže da možemo kupiti akciju A po ceni od $500 u roku od mesec dana a cena akcije posle 15 bude $650 onda mi možemo iskoristiti opciju i kupiti po $500 a prodati po $650 i profitirati $150. Međutim, pošto ništa nije besplatno, u ovu računicu moramo uračunati i cenu opcije C tako da bismo zapravo dobili $150 - C. 
 
 Literatura
 -----------

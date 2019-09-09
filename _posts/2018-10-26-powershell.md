@@ -87,5 +87,5 @@ For instance for CSV:
 
 	gc data.csv | ConvertFrom-Csv
 
-Also, there are commandllets for making HTTP requests, REST requests etc. You can also make your own commandlets from powershell or from C#. 
+Also, there are commandlets for making HTTP requests, REST requests etc. You can also make your own commandlets from powershell or from C#. 
 

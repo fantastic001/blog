@@ -7,12 +7,12 @@ categories: functional-programming software
 
 Recently I've started reading about functional programming. When you have been programming using OOP principles 
 since you were beginner, it sounds a little bit strange to change approach all the way around. It is scary and sometimes hard. 
-As you are older and older, new experiences come hard to gain. In this article I will try to make some clarrifications about this 
+As you are older and older, new experiences come hard to gain. In this article I will try to make some clarifications about this 
 approach which starts to be a big deal in big software companies as well as startups. It was hard to me to change the way of thinking 
 so I am willing to make this process easier for you. I know you've been doing Java or c# for a long time. I know you know the 
-bad things in these languages. I know you are sick of OOP or you will eventully be sick of OOP. I will try to explain some pitfalls 
+bad things in these languages. I know you are sick of OOP or you will eventually be sick of OOP. I will try to explain some pitfalls 
 of OOP first and then continue by explaining functional approach and how it solves all of that. I will give examples in Haskell 
-but you don't need to be familiar with Haskell to understand examples since they're pretty straighforward and I will give explanation
+but you don't need to be familiar with Haskell to understand examples since they're pretty straightforward and I will give explanation
 for things which may seem strange.
 
 Mutability, thread-safeness and history
@@ -22,7 +22,7 @@ Mutability, thread-safeness and history
 First of all, functional programming is type of declarative programming which means that we explain what is something instead 
 of giving instructions step by step which is seen in imperative programming. 
 For example, in functional programming we say "factorial of n is n times factorial of n-1 where factorial of 0 is 1". In 
-imperative approach, we say how to compute factorial of n: "start with 1 and say resul is 1 then increment counter to n and multiply result by counter and save it into result". Here you can see big difference in way of thinking. I personally think that declarative approach is much simpler.
+imperative approach, we say how to compute factorial of n: "start with 1 and say result is 1 then increment counter to n and multiply result by counter and save it into result". Here you can see big difference in way of thinking. I personally think that declarative approach is much simpler.
 
 In above example you can see one important difference between these approaches. In declarative programming we define value only once. Translated in language you already know, think of this as using only constant variables instead of common variables which can change state later. This is called immutability which means "when defined once, cannot be changed later". Take a look at the following example of C code:
 
@@ -43,28 +43,28 @@ In above example you can see one important difference between these approaches. 
 	}
 	
 Our function f changes state of x by increasing it by one and returns previous state increased by one. For a moment let's 
-orget about this function definitiion and imagine we only see main function. What would you guess out of it? It seems logical 
+forget about this function definition and imagine we only see main function. What would you guess out of it? It seems logical 
 that f(x) is always equal to f(x) because mathematically it is logical to one function gives the same value for the same 
-parameters. Here we can see this is not the case. This program will output "6 7" which is not logical untill we see definition
-of function. In functional approach this is not possible at all! In functtional approach we cannot mutate state and function 
+parameters. Here we can see this is not the case. This program will output "6 7" which is not logical until we see definition
+of function. In functional approach this is not possible at all! In functional approach we cannot mutate state and function 
 will return the same output for the same input, ALWAYS! 
 
 Now, you are probably asking why do we limit ourselves to not mutate objects? The answer is because we are undisciplined and 
 we need computers to limit us from making mistakes. It is always better to know you have bug when you read compile errors instead of 
 seeing end-user complains in bug tracker. 
 
-Another reason why immutability is great is that your program is thread-safe. When you do not change state of anything, you do not have race conditions and your program can be paralelized easily. This starts to be more and more important since we are at saturation 
+Another reason why immutability is great is that your program is thread-safe. When you do not change state of anything, you do not have race conditions and your program can be parallelized easily. This starts to be more and more important since we are at saturation 
 of Moor's curve and the only way to make computers faster is by adding multiple cores and this can be used efficiently only
 if your program supports parallelism. 
 
 Fun fact is that functional programming appeared before OOP. It appeared in 1950's and was introduced in Lisp developed in MIT. The reason why functional programming didn't survive was because, at that time, it was considered slow since architecture of computers didn't 
-agree with this concept. OOP seemed as logical approach and was designed for enterprise. Functional programming now is comming back since we have much faster computers and have requirements which fit with this approach (parallelism for instance).
+agree with this concept. OOP seemed as logical approach and was designed for enterprise. Functional programming now is coming back since we have much faster computers and have requirements which fit with this approach (parallelism for instance).
 
 
 Data-in, data out model
 ========================
 
-This model has a few principples which makes your code more functional, you can implement this approach even in your OOP
+This model has a few principles which makes your code more functional, you can implement this approach even in your OOP
 code and make it more thread-safe. These are principles you should follow in your existing projects, no matter what language do you 
 use: 
 
@@ -81,7 +81,7 @@ Example: list in C
 
 Let's take an example where we will implement list of integers in C.
 
-Firt we will define our list element structure: 
+First we will define our list element structure: 
 
 	typedef struct ListElem_t
 	{
@@ -125,11 +125,11 @@ Now we will create function that, for a given list element, creates list with he
 	
 Nothing special so far, right? 
 
-Now let's make push method which will add element to the beggining of the list. This method will return a new instance of 
-list which will have head pointing to the new element while the remaining of the list is behind head so prevous head will be next 
+Now let's make push method which will add element to the begging of the list. This method will return a new instance of 
+list which will have head pointing to the new element while the remaining of the list is behind head so previous head will be next 
 element of new head. At the first it seems that we will need to copy whole list and add new element and return this new list. This 
 approach is inefficient. The good news are that we do not have to do that. We will need to make new element and new list instance 
-whic has head pointing to the new element. Next pointer of new element will be just head of our list in arguments so we basically 
+which has head pointing to the new element. Next pointer of new element will be just head of our list in arguments so we basically 
 do not copy anything. We can do this trick because immutability guarantees that elements of the list won't be changed in any time. 
 
 	List* push(List* l, int value)
@@ -144,8 +144,8 @@ Now let's make function that will return new list but without head of a given li
 	        return create_list(l->head->next);
 	}
 
-If list is not empty, we simply create new list which has head of next elemen of head of our given list. 
-If list is empty, behavior of tail is not defined so we will end up with segmentation fault (we will try dereferencing NULL pointer).
+If list is not empty, we simply create new list which has head of next element of head of our given list. 
+If list is empty, behaviour of tail is not defined so we will end up with segmentation fault (we will try de-referencing NULL pointer).
 
 For debugging purposes we will make print function.
 
@@ -181,7 +181,7 @@ list where it has one additional element.
 Introduction to Haskell 
 =======================
 
-Haskell is purely functional programing language. This means that functions recieve parameters, do not modify them and always return 
+Haskell is purely functional programming language. This means that functions receive parameters, do not modify them and always return 
 result. This also means that function themselves are first class objects meaning that functions can be passed as parameters and 
 returned as result. 
 
@@ -204,16 +204,16 @@ So we can run this in ghci like this:
 	25
 	>>>
 
-so you can see that we can call function and easily get result. We first declare function by specifying  what types of argument it recieves and what type it returns. After that, we can define our function. 
+so you can see that we can call function and easily get result. We first declare function by specifying  what types of argument it receives and what type it returns. After that, we can define our function. 
 
-Now let's define function that computes sum of two itegers:
+Now let's define function that computes sum of two integers:
 
 
 	add :: Int -> Int -> Int 
 	add a b = a+b
 
-Here we have two parameters and result. The reson we declared function like above is that this declration is actully not a function 
-with two parameters. In Haskell, functions can recieve only one parameter and return only one result. Here we have function 
+Here we have two parameters and result. The reason we declared function like above is that this declaration is actually not a function 
+with two parameters. In Haskell, functions can receive only one parameter and return only one result. Here we have function 
 which takes one integer and returns function which takes another integer which then returns their sum. 
 
 This can be easily proven by passing only one parameter to the function:
@@ -244,7 +244,7 @@ to get tail of list:
 
 	tail l
 
-you can do list concaenation which will merge two lists in a new list:
+you can do list concatenation which will merge two lists in a new list:
 	
 	l = l1 ++ l2
 
@@ -262,7 +262,7 @@ This is something you have already seen in math: you can define list by specifyi
 
 	squares = [x*x | x <- [1..10]]
 
-or you can add additionall condition, for instance squares divisible by 3:
+or you can add additional condition, for instance squares divisible by 3:
 
 	squares = [x*x | x <- [1..10], x*x `mod` 3 == 0]
 

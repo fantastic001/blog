@@ -6,10 +6,10 @@ categories: opinion education
 ---
 
 Bliži se i taj famozni prijemni. Loš termin za objavljivanje ovog članka jer je sasvim moguće da se većina budućih studenata već odlučila koji će fakultet 
-da upiše. Ipak, zna se, na Internetu sve ostaje pa i ovaj članak. Zbog ovoga ovo može služiti svim budućim srednjoškolcima, mamama i tatama, učiteljima, nastavnicima i profesorima. Može služiti i bakama i dekama da prestanu da gnjave studente "zašto studiraš X godina" a naročito treba da služi onima koji su sa ne-tehničkih fakulteta koojima je čudno kako to da loši studenti na, recimo, ETF-u imaju veću platu nego oni sa desetkama. Zbog svega ovoga je nastao ovaj članak. Da odgovorim na stalno pitanje srednjoškolaca "a koji je fax najbolji" i da isto 
+da upiše. Ipak, zna se, na Internetu sve ostaje pa i ovaj članak. Zbog ovoga ovo može služiti svim budućim srednjoškolcima, mamama i tatama, učiteljima, nastavnicima i profesorima. Može služiti i bakama i dekama da prestanu da gnjave studente "zašto studiraš X godina" a naročito treba da služi onima koji su sa ne-tehničkih fakulteta kojima je čudno kako to da loši studenti na, recimo, ETF-u imaju veću platu nego oni sa desetkama. Zbog svega ovoga je nastao ovaj članak. Da odgovorim na stalno pitanje srednjoškolaca "a koji je fax najbolji" i da isto 
 odgovorim na pitanje "a zašto se ne cimaš previše oko faksa?". 
 
-Kako bismo pravilno izanalizirali ovu nedoumicu, valjalo bi kkrenuti "naopačke". Umesto da prvo pišem koji fax izabrati pa onda kako dalje, ja ću pisati o tome šta je krajnji cilj i onda dooći, na kraju, do teme koji faks izabrati. Iznenadiće vas zaključak! (FOTO VIDEO)
+Kako bismo pravilno izanalizirali ovu nedoumicu, valjalo bi krenuti "naopačke". Umesto da prvo pišem koji fax izabrati pa onda kako dalje, ja ću pisati o tome šta je krajnji cilj i onda doći, na kraju, do teme koji faks izabrati. Iznenadiće vas zaključak! (FOTO VIDEO)
 
 Kakvu karijeru želite?
 ------------------------
@@ -32,7 +32,7 @@ Da sve nije tako crno, govori i činjenica da je dosta ljudi srećno, zdravo i b
 
 6. ...
 
-Šta je glavna geška kod odlučivanja koji ćeš faks da upišeš?
+Šta je glavna greška kod odlučivanja koji ćeš faks da upišeš?
 ----------------------------------------------------------------
 
 Većina srednjoškolaca ide bottom-up principom "upišem faks pa ću onda da vidim kako dalje". Takvo razmišljanje često dovodi do toga da ili omašite zanimanje ili podredite sve studiranju i na
@@ -41,7 +41,7 @@ kraju, kad je već kasno, shvatite da nemate ništa od toga. Drugi, pravilniji, 
 Kakvi su fakulteti za IT?
 -----------------------------
 
-Svi fakulteti koji se bave obrazovanjem studenata za IT tržište imaju jednu zajedničku stvar: svi ne obrazuju i ne daju zaista potrebne veštine koje sam naveo gore. Dakle, koji god fakultet da upišete, nećete dobiti gore-navedene veštine. Prvo, predmeti su takvi da nemaju povezanost sa drugim predmetima ili, ne daj bože, sa realnom primenom veština za koje obučavaju dati predmeti. Tek nakon treće godine prosečan student dobija mogućnost da primenjuje nešto u praksi. Tada, taj isti prosečan student nailazi na konkurenciju kolega koji su se bavili datim zanimanjem i pored faksa i samo već imaju svoje lične projekte. 
+Svi fakulteti koji se bave obrazovanjem studenata za IT tržište imaju jednu zajedničku stvar: svi ne obrazuju i ne daju zaista potrebne veštine koje sam naveo gore. Dakle, koji god fakultet da upišete, nećete dobiti gore-navedene veštine. Prvo, predmeti su takvi da nemaju povezanost sa drugim predmetima ili, ne daj Bože, sa realnom primenom veština za koje obučavaju dati predmeti. Tek nakon treće godine prosečan student dobija mogućnost da primenjuje nešto u praksi. Tada, taj isti prosečan student nailazi na konkurenciju kolega koji su se bavili datim zanimanjem i pored faksa i samo već imaju svoje lične projekte. 
 
 
 Pa kako onda?

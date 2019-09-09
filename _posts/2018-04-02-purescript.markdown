@@ -52,7 +52,7 @@ If you know Haskell you will easily understand PS, just see [what is different](
 
 ===Building UI with PS===
 
-There's nice module for PureScript where you can easily build reactive UIs. It is called Halogen and [here](https://github.com/slamdata/purescript-halogen/tree/master/docs) you can reead guide to it. 
+There's nice module for PureScript where you can easily build reactive UIs. It is called Halogen and [here](https://github.com/slamdata/purescript-halogen/tree/master/docs) you can reed guide to it. 
 
 ===Building backend===
 

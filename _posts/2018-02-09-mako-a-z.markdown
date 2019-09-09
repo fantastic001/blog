@@ -148,7 +148,7 @@ which will output only entries where at least one column contains specified stri
 
 In tables you can keep track of something important to you and then measure how many things you have done by using metric which counts entries in table. 
 
-Etries in table are shortened such that it fills screen nice, you can show whole entry by using:
+Entries in table are shortened such that it fills screen nice, you can show whole entry by using:
 
 	mako table mytable entry 1 
 
@@ -165,7 +165,7 @@ To update entry:
 Reporting system
 ================
 
-Mako can make reports on various topics. At this time, two kinds of reports are supported: monthly and quartely reports. These reports
+Mako can make reports on various topics. At this time, two kinds of reports are supported: monthly and quarterly reports. These reports
 show some statistics about tasks and projects in general. To generate monthly report, run:
 
 	mako reports generate monthly 2018 1 
