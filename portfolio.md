@@ -4,9 +4,11 @@ title: Project portfolio
 permalink: /portfolio/
 --- 
 
-# Organization and time management 
+Organization and time management 
+===================================
 
-## Mako
+Mako
+--------------
 
 [Mako](https://github.com/fantastic001/Mako) - Tool for making weekly schedules, organizing projects and measuring progress in achieving goals.
 
@@ -14,55 +16,69 @@ permalink: /portfolio/
 
 [Mako A-Z](http://fantastic001.github.io/mako/agile/organization/2018/02/09/mako-a-z.html)
 
-## Mako QT
+Mako QT
+---------
 
 GUI for Mako 
 
 [GitHub](https://github.com/fantastic001/Mako-Qt)
 
-## Marina
+Marina
+---------
 
 Decision making tool. 
 
 [GitHub](https://github.com/fantastic001/Marina)
 
-# DevOps and system administration 
+DevOps and system administration 
+==================================
 
-## box automation
+box automation
+---------------
+
 
 [GitHub](https://github.com/fantastic001/box-automation)
 
-## Fantastixus bins 
+Fantastixus bins 
+-----------------
 
 [GitHub repository](https://github.com/fantastic001/fantastixus-bins)
 
-## dotfiles
+dotfiles
+---------
 
 Set of config files to make life easier. 
 
 [GitHub](https://github.com/fantastic001/dotfiles)
 
-# Software development tools 
+Software development tools 
+============================
 
-## Templater 
+Templater 
+---------
 
 [GitHub](https://github.com/fantastic001/templater)
 
-## CodeShare
+CodeShare
+----------
 
 GUI tool for sharing code in real time while typing. 
 
 [GitHub](https://github.com/fantastic001/CodeShare)
 
-# Financial analysis 
+Financial analysis 
+=====================
 
-## Finpredict
+Finpredict
+----------
 
 [GitHub](https://github.com/fantastic001/finpredict)
 
-# 3D graphics 
+3D graphics 
+============
 
-## Height3D
+Height3D
+---------
 
 small open source framework which adds C++ features to OpenGL and lays around it.
 
@@ -70,31 +86,36 @@ Please see This article describing how to compile Height3D and how to use it.
 
 [GitHub](https://github.com/fantastic001/Height3D)
 
-# Static site tools and libraries
+Static site tools and libraries
+====================================
 
-## Feed2Jekyll 
+Feed2Jekyll 
+-----------
 
 Bring RSS feeds to your jekyll static site with this tool
 
 [GitHub](https://github.com/fantastic001/feed2jekyll)
 
-## pyjekyll
+pyjekyll
+----------
 
 Python library for manipulating jekyll static sites hosted on filesystem.
 
 [GitHub](https://github.com/fantastic001/pyjekyll)
 
-## JekyllWeb 
-
+JekyllWeb 
+--------------
 Web application for jekyll static site administration.
 
 [GitHub](https://github.com/fantastic001/jekyll-web)
 
 
 
-# Facebook utilities, libraries and tools 
+Facebook utilities, libraries and tools 
+=========================================
 
-## MBot 
+MBot 
+-----
 
 Python library for creating Messenger bots
 
@@ -102,14 +123,16 @@ Python library for creating Messenger bots
 
 [Gettting started](http://fantastic001.github.io/tools/dev/2018/10/29/mbot.html)
 
-## Facebook Archiver
+Facebook Archiver
+---------------------
 
 Facebook native application for downloading messages and saving them onto local machine
 
 
 [GitHub](https://github.com/fantastic001/facebook_archiver)
 
-## pyfs 
+pyfb
+-----
 
 Python facebook API with classes for representing conversations, persons, method to like and comment objects etc...
 
@@ -118,39 +141,48 @@ Python facebook API with classes for representing conversations, persons, method
 
 
 
-# Compilers 
+Compilers 
+============
 
-## ExpressionCompiler
+ExpressionCompiler
+---------------------
 
 Expression parser made in Haskell. 
 
 [GitHub](https://github.com/fantastic001/ExpressionCompiler)
 
-# LibreOffice utilities, tools and libraries 
+LibreOffice utilities, tools and libraries 
+=============================================
 
-## odspy
+odspy
+------
 
 Python library for reading ODS files (LibreOffice Calc). Supports reading of merged cells as well and interprets them as cells with same content. 
 
 [GitHub](https://github.com/fantastic001/odspy)
 
-# Org-mode libraries, utilities and tools 
+Org-mode libraries, utilities and tools 
+==========================================
 
-## YAPyORG
+YAPyORG
+---------
 
 Yet Another Python ORG-mode parsing library 
 
 [GitHub](https://github.com/fantastic001/YAPyOrg)
 
-## Org# 
+Org# 
+------
 
 Library for parsing org mode files in c#. 
 
 [GitHub](https://github.com/fantastic001/org-sharp)
 
-# CLI support libraries and tools 
+CLI support libraries and tools 
+===================================
 
-# EasyWidgets 
+EasyWidgets 
+-------------
 
 Python library which makes creating curses dialogs, wizzards and menus easy. 
 
@@ -158,7 +190,8 @@ Python library which makes creating curses dialogs, wizzards and menus easy.
 
 [Introduction](http://fantastic001.github.io/python/libraries/projects/2018/03/08/easy-widgets.html)
 
-## ArgumentStack 
+ArgumentStack 
+----------------
 
 Python library to make commandline options parsing easier. It produces commandline option handling similar to one `nmcli` tool provides. 
 
@@ -167,42 +200,50 @@ Python library to make commandline options parsing easier. It produces commandli
 [Introduction](http://fantastic001.github.io/python/2018/02/07/argumentstack.html)
 
 
-## CursesMenu
+CursesMenu
+------------
 
 [GitHub](https://github.com/fantastic001/curses-menu)
 
-# Network analysis tools 
+Network analysis tools 
+========================
 
-## ARPSniffer 
+ARPSniffer 
+------------
 
 Tool which uses ARP poisoning to sniff on network.
 
 [GitHub](https://github.com/fantastic001/arp-sniffer)
 
-# Multimedia and entertainment tools 
+Multimedia and entertainment tools 
+=====================================
 
-## yt-txt2mp3
+yt-txt2mp3
+-------------
 
 Tool which from given titles of songs in text form, searches songs on youtube, downloads them and converts them to mp3. 
 
 [GitHub](https://github.com/fantastic001/yt-txt2mp3)
 
-# Computer vision and pattern matching 
+Computer vision and pattern matching 
+=========================================
 
-## pageproc
+pageproc
+---------
 
 Recognize page elements by page bitmap analysis.
 
 [GitHub](https://github.com/fantastic001/pageproc)
 
-
-## FASIC
+FASIC
+----------
 
 Face and speaker identification combination system.
 
 [GitHub](https://github.com/fantastic001/FASIC)
 
-## PCATrainer 
+PCATrainer 
+--------------
 
 Tool for making and verifying PCA models. 
 
@@ -210,40 +251,57 @@ Tool for making and verifying PCA models.
 
 
 
-# GUI support libraries 
+GUI support libraries 
+======================
 
-## Code Editor Widget for Qt
+Code Editor Widget for Qt
+----------------------------
 
 [GitHub](https://github.com/fantastic001/code-editor-widget)
 
-# Operating system modules 
+Operating system modules 
+=============================
 
-## MIFS with FUSE
+MIFS with FUSE
+-----------------
 
 Fork of mi-file-system with upgrade to support working within FUSE. 
 
 [GitHub](https://github.com/fantastic001/mi-file-system)
 
-# Simulators 
+Simulators 
+============
 
-## FluidSim
+FluidSim
+----------
 
 Fluid dynamics simulation using different types of methods
 
 [GitHub](https://github.com/fantastic001/fluidsim)
 
 
-# DokuWiki utilities, libraries and tools 
+DokuWiki utilities, libraries and tools
+=========================================
 
-## pydokuwiki
+pydokuwiki
+------------
 
 Python API for parsing and manipulating dokuwiki pages
 
 [GitHub](https://github.com/fantastic001/pydokuwiki)
 
-# Distributed systems and cloud 
+Distributed systems and cloud 
+====================================
 
-# Other
+InstantAPI
+--------------
+
+Store objects on cloud very easyt and load objects from cloud. 
+
+[GitLab](https://gitlab.com/fantastic001/InstantAPI)
+
+Other
+=========
 
 [ProdEx](https://github.com/fantastic001/ProdEx) - Web application for e-commerce 
 
