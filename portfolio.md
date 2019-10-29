@@ -109,6 +109,8 @@ Web application for jekyll static site administration.
 
 [GitHub](https://github.com/fantastic001/jekyll-web)
 
+[Blog article](http://fantastic001.github.io/python/web/jekyll/2019/10/29/jekyll-web.html)
+
 
 
 Facebook utilities, libraries and tools 
