@@ -28,6 +28,12 @@ Decision making tool.
 
 # DevOps and system administration 
 
+## fantastixus-system
+
+Packages, setup scripts and configurations for Arch Linux distributions.
+
+[GitHub](https://github.com/fantastic001/fantastixus-system)
+
 ## box automation
 
 
