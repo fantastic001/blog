@@ -61,6 +61,18 @@ GUI tool for sharing code in real time while typing.
 
 [GitHub](https://github.com/fantastic001/finpredict)
 
+## Bankometer
+
+Tool which helps you analyze your mortage options 
+
+[GitHub](https://github.com/fantastic001/bankometer)
+
+## Finstrategist
+
+Rule-based system aimed for financial trading on stock market
+
+[GitHub](https://github.com/fantastic001/finstrategist)
+
 # 3D graphics 
 
 ## Height3D
@@ -249,6 +261,12 @@ Python API for parsing and manipulating dokuwiki pages
 Store objects on cloud very easyt and load objects from cloud. 
 
 [GitLab](https://gitlab.com/fantastic001/InstantAPI)
+
+## CoNAL
+
+Computing node abstraction layer
+
+[GitHub](https://github.com/fantastic001/conal)
 
 # Other
 
