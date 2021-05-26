@@ -49,6 +49,7 @@ Set of config files to make life easier.
 
 [GitHub](https://github.com/fantastic001/dotfiles)
 
+
 # Software development tools 
 
 ## Templater 
@@ -273,6 +274,12 @@ Store objects on cloud very easyt and load objects from cloud.
 Computing node abstraction layer
 
 [GitHub](https://github.com/fantastic001/conal)
+
+## CloudPost 
+
+Platform for building vendor-independent cloud projects
+
+[GitHub](https://github.com/lambda-lab/cloudpost)
 
 # Other
 
