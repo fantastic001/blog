@@ -281,6 +281,12 @@ Platform for building vendor-independent cloud projects
 
 [GitHub](https://github.com/lambda-lab/cloudpost)
 
+## DistTranscode
+
+Distributed video encoding/decoding and transformation tool.
+
+[GitHub](https://github.com/fantastic001/disttranscode)
+
 # Other
 
 [ProdEx](https://github.com/fantastic001/ProdEx) - Web application for e-commerce 
