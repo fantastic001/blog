@@ -147,7 +147,7 @@ Expression parser made in Haskell.
 
 [GitHub](https://github.com/fantastic001/ExpressionCompiler)
 
-# LibreOffice utilities, tools and libraries 
+# Document management utilities, tools and libraries 
 
 ## odspy
 
@@ -155,7 +155,11 @@ Python library for reading ODS files (LibreOffice Calc). Supports reading of mer
 
 [GitHub](https://github.com/fantastic001/odspy)
 
-# Org-mode libraries, utilities and tools 
+## PaperTrack
+
+A tool for managing documents, their states and their metadata as well as their collection.
+
+[GitHub](https://github.com/fantastic001/papertrack)
 
 ## YAPyORG
 
