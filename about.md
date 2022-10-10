@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-[Contact file](./contact.vcf)
+[Contact file](/contact.vcf)
 
 I am software developer interested in open source technology. I am interested in the following technologies:
 
