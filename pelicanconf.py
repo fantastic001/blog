@@ -17,16 +17,14 @@ AUTHOR_FEED_RSS = None
 
 # Blogroll
 LINKS = (
-    ("Pelican", "https://getpelican.com/"),
-    ("Python.org", "https://www.python.org/"),
-    ("Jinja2", "https://palletsprojects.com/p/jinja/"),
-    ("You can modify those links in your config file", "#"),
+    # ("Pelican", "https://getpelican.com/"),
+    # ("Python.org", "https://www.python.org/"),
+    # ("Jinja2", "https://palletsprojects.com/p/jinja/"),
+    # ("You can modify those links in your config file", "#"),
 )
 
 # Social widget
 SOCIAL = (
-    ("You can add links in your config file", "#"),
-    ("Another social link", "#"),
 )
 
 DEFAULT_PAGINATION = 10
@@ -39,3 +37,6 @@ MATH_JAX = '<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtm
 EXTRA_HEADER = MATH_JAX
 
 THEME = "./theme/"
+STATIC_PATHS = ["static"]
+PAGE_PATHS = ['pages']  # defaults to 'pages' subfolder in 'content'
+DISPLAY_PAGES_ON_MENU = True  # Optional: adds them to the nav menu
