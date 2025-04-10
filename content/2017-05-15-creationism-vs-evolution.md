@@ -1,9 +1,7 @@
----
-layout: post
-title:  "Bog vs Darvin - bitka bez pobednika ili kako nismo razumeli svrhu obrazovanja"
-date:   2017-05-15 18:15:00 +0100
-categories: opinion education science
----
+Title: Bog vs Darvin - bitka bez pobednika ili kako nismo razumeli svrhu obrazovanja
+Date: 2017-05-15 18:15:00 +0100
+Slug: 2017-05-15-creationism-vs-evolution
+
 
 Ovih dana se ponovo pojavila [polemika](http://rs.n1info.com/a246892/Vesti/Vesti/Posle-13-godina-Srbija-ponovo-muci-muku-s-Darvinom.html) o tome da li deca, uzrasta osmog razreda, treba da izučavaju teoriju evolucije. Da je vrag pojeo šalu, to pokazuje i činjenica da je ova peticija koju potpisuju akademici i doktori, stigla i do Ministarstva i do Skupštinskog odbora za obrazovanje. Pored ovih institucija, reagovali su i Univerzitet u Beogradu i Centar za promociju nauke. 
 
@@ -17,7 +15,7 @@ Sada se postavlja pitanje šta ukloniti, šta dodati i kako izaći na kraj sa to
 
 Iz [Akcionog plana razvoja sistema obrazovanja](http://www.mpn.gov.rs/wp-content/uploads/2015/08/Akcioni_plan.pdf) se mogu izvući šta smo kao država definisali za ciljeve i čemu želimo da težimo, u ovom tekstu ću citirati bitan deo iz ovog plana:
 
-![Citat iz akcionog plana]({{ site.url}}/images/citat.png)
+![Citat iz akcionog plana](images/citat.png)
 
 Dakle, naš cilj je da kroz obrazovanje naučimo učenike da su sposobni da donose odluke u životu bazirane na znanju. Drugim rečima, mi treba da se fokusiramo na koncepte odlučivanja a ne na ponuđene mogućnosti. Kako sada ovo primeniti na dati primer o izbacivanju Darvina iz udžbenika. Prvo, treba se vratiti na argument bivše ministarke prosvete i tu treba da se složimo da on nema nikakvu osnovu iz prostog razloga što, ako pitate svakog pedagoga, on će vam reći da deca u tom uzrastu mogu da shvate da:
 

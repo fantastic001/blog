@@ -5,7 +5,7 @@ date:   2017-03-11 22:15:00 +0100
 categories: petnica 
 ---
 
-![IS Petnica]({{ site.url}}/images/petnica.jpg)
+![IS Petnica](images/petnica.jpg)
 
 Za 4 godine koliko sam proveo u [Istraživačkoj Stanici "Petnica"](http://www.petnica.rs) kao polaznik seminara računarstva, imao sam 
 priliku da iskusim kako je to raditi na naučno-istraživačkom projektu. Ovo mi je mnogo značilo da naučim dosta važne stvari i o računarstvu ali i o tome kako da se organizujem, kako da planiram, kako da završim projekat do kraja, kako da obradim rezultate i na kraju kako da te iste rezultate predstavim drugima. 
